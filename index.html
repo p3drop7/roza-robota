@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!---- Metas ---->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Casa de Cultura Roza Robota</title>
+	<meta name="description" content="Casa de Cultura Roza Robota es un espacio socio-comunitario dedicado a promover la creación de la cultura judía en Buenos Aires y brindar espacios de reflexión entre juventudes.">
+
+	<!-- Fontawesome icons -->
+	<script src="https://kit.fontawesome.com/5f4f906fbc.js" crossorigin="anonymous"></script>
+
+	<!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/rosa.png"/>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<!-- Kalam -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Open Sans Condensed -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Animaate CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Mi css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- Navegador Collapse para pantallas pequeñas -->
+	<nav class="navegador animate__animated animate__fadeInDown">
+		<div class="navegador__brand">
+			<h1 class="h1--smaller">Casa de Cultura</h1>
+			<a class="h1__animation" href="#top"><h1>ROZA ROBOTA</h1></a>
+		</div>
+		<button type="button" class="collapsible"><i class="fas fa-angle-double-down collapsible__icon"></i>
+		</button>	
+			<ul class="content">
+        		<li><a href="#nosotros">Nosotros</a></li>
+        		<li><a href="#contacto">Contacto</a></li>
+        		<li><a href="pages/proyectos.html">Proyectos</a></li>
+        	</ul>
+	</nav>	
+
+	<!-- Navegador para pantallas grandes -->
+	<nav class="navegador992px animate__animated animate__fadeInDown">
+		<div class="navegador992px__brand">
+			<h1 class="h1_992px h1_992px--smaller">Casa de Cultura</h1>
+			<a href="#top"><h1 class="h1_992px h1__animation">ROZA ROBOTA</h1></a>
+		</div>
+		<ul class="navegador992px__lista">
+        	<li class="navegador992px__btns"><a href="#nosotros">Nosotros</a></li>
+        	<li class="navegador992px__btns"><a href="#contacto">Contacto</a></li>
+        	<li class="navegador992px__btns"><a href="pages/proyectos.html">Proyectos</a></li>
+        </ul>
+	</nav>
+
+	<!-- LOGO -->
+	<header class="headerIndex" id="top">
+		<img src="assets/logoFondo.jpg" alt="logo" class="header__logo animate__animated animate__zoomIn">
+		<i class="fas fa-angle-down header__flecha"></i>
+	</header>
+
+	<!-- MAIN INDEX -->
+	<main>
+
+		<!-- Separador -->
+		<section class="separador">
+			<img class="separador__fondo" src="assets/fondoGrande.jpg">
+			<p class="parrafo parrafo--separador">¡Kehilat Bogrim*ot de Hashomer Hatzair Argentina!</p>
+            <p class="parrafo parrafo--separador">¡Por un marco judeo humanista para todas, todos y todes!</p>
+		</section>
+
+		<!-- NOSOTROS -->
+		<section class="nosotros" id="nosotros">
+			
+			<div class="seccion__titulo" >
+				<h2>NOSOTROS</h2>
+				<i class="fas fa-star-of-david iconoEstrella"></i>
+			</div>
+
+			<img class="logo_Hashomer" src="assets/logoHashomer.jpg" alt="Logo Hashomer">
+			
+			<div class="nosotros__parrafo">
+				<p class="parrafo">Casa de Cultura Roza Robota nace como una iniciativa de quienes habiendo pasado por Hashomer Hatzair buscan seguir activando. La propuesta es crear un puente entre las juventudes, dar lugar a nuevas experiencias socio-comunitarias, brindar espacios de reflexión relevantes a nuestro tiempo y contribuir a la creación de la cultura judía en Buenos Aires.<br>Invitamos a todas y todos a sumarse a nuestras actividades y proyectos. ¡Traé tu idea!</p>
+			</div>
+
+		</section>
+
+		<!-- CONTACTO -->
+		<section class="contacto" id="contacto">
+			
+			<div class="seccion__titulo">
+				<h2 class="h2--contacto">¡Contactate con nosotros!</h2>
+				<i class="fas fa-star-of-david iconoEstrella--contacto"></i>
+			</div>
+
+			<!-- Inicio FORMULARIO -->
+			<div class="formularioDeContacto">
+				
+				<form action="#" method="GET" class="formContacto">
+
+					<div class="formNombre">
+						<label for="nombre" > Nombre:<br>
+						<input type="text" name="nombre" placeholder="Ingresá tu nombre" required>
+						</label>
+					</div>
+
+					<div class="formApellido">
+						<label for="apellido">Apellido:<br>
+						<input type="text" name="apellido" placeholder="Ingresá tu apellido">
+						</label>
+					</div>
+
+					<div class="formEmail">
+						<label for="email">Email:<br>
+						<input type="email" name="email" placeholder="Ingresá tu email" required>
+						</label>
+					</div>
+					
+					<div class="formTelefono">
+						<label for="telefono">Teléfono:<br>
+						<input type="tel" name="telefono" placeholder="Ingresá tu teléfono">
+						</label>
+					</div>
+					
+					<div class="formMotivo">
+						<label for="motivo"> Motivo por el que nos contacta: 
+							<select required>
+								<option label="seleccione"></option>
+								<option value="J">Jotam</option>
+								<option value="U">Ulpan</option>
+								<option value="H">Raices Urbanas (Huerta)</option>
+								<option value="O">Otras actividades</option>
+							</select>
+						</label>
+					</div>
+					
+					<div class="formTextArea">
+						<textarea rows="8" cols="40" placeholder="Tu mensaje" required></textarea>
+					</div>
+
+					<div class="formNews">
+						<label for="newsletter"> Deseo recibir el newsletter
+						<input type="checkbox" name="newsletter" value="1">
+						</label>
+					</div>
+					
+					<div class="boton">
+						<input class="boton__boton" type="submit" value="Enviar">
+					</div>
+
+				</form>
+			
+			</div>
+			<!-- Fin FORMULARIO -->	
+
+		</section>
+
+		<footer>
+
+			<div class="footer__titulo footer__titulo--lugar">
+				<h3>LUGAR</h3>
+			</div>
+			<div class="footer__texto footer__texto--lugar">
+				<p class="parrafo parrafo--footer">Buenos Aires<br>
+				Argentina</p>
+			</div>
+
+			<div class="footer__titulo footer__titulo--redes">
+				<h3>NUESTRAS REDES SOCIALES:</h3> 
+			</div>	
+			<div class="footer__texto footer__texto--redes">
+				<a class="parrafo parrafo--footer" href="https://www.facebook.com/CCRozaRobota/" target="_blank">Facebook</a>
+				<a class="parrafo parrafo--footer" href="https://www.instagram.com/ccrozarobota/" target="_blank">Instagram</a>
+			</div>
+		
+			<div class="footer__titulo footer__titulo--logo">
+				<h3>Casa de cultura Roza Robota</h3>
+			</div>
+			<div class="footer__texto footer__texto--logo">	
+				<a href="#top">Subir</a>
+			</div>
+
+		</footer>
+
+		<div class="copyright">
+        	<p class="parrafo parrafo--copyright">Copyright © Pedro Palencia 2021</p>
+    	</div>
+
+	</main>
+
+	<!-- JS del menu collapsible -->
+	<script type="text/javascript">
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+  		coll[i].addEventListener("click", function() {
+    		this.classList.toggle("active");
+    		var content = this.nextElementSibling;
+    		if (content.style.maxHeight){
+      		content.style.maxHeight = null;
+    		}			 else {
+      		content.style.maxHeight = content.scrollHeight + "px";
+    		} 
+  		});
+		}
+	</script>
+
+</body>
+</html>
