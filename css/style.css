@@ -1,0 +1,671 @@
+@charset "UTF-8";
+/* IMPORTS */
+/* rgb (35, 194, 160) */
+.navegador {
+  background-color: #4DAA57; }
+
+.content {
+  background-color: #4DAA57; }
+
+.collapsible {
+  background-color: white; }
+
+.collapsible__icon {
+  color: #47edc9; }
+
+.navegador992px {
+  background-color: #4DAA57; }
+
+.nosotros {
+  background-color: rgba(35, 194, 160, 0.8); }
+
+.contacto {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+/* MAP */
+/* EACH */
+.proyecto--main {
+  background-color: #1685E5; }
+
+.proyecto--1 {
+  background-color: white; }
+
+.proyecto--2 {
+  background-color: #ffc107; }
+
+.proyecto--3 {
+  background-color: #27b092; }
+
+footer {
+  background-color: #2c3e50; }
+
+.copyright {
+  background-color: #222E3E; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "Kalam", cursive;
+  font-size: 1.6rem;
+  color: white; }
+
+.h1--smaller {
+  font-size: 1rem; }
+
+.h1_992px {
+  font-size: 2.3em;
+  color: white;
+  padding: 0px;
+  margin: 0px; }
+
+.h1_992px--smaller {
+  font-size: 1.5em;
+  padding: 0px;
+  margin: 0px; }
+
+h2 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  font-size: 3rem;
+  color: white; }
+
+.h2--contacto {
+  color: #222E3E; }
+
+.proyectos h2 {
+  color: #222E3E; }
+
+.h2--donar {
+  color: #2c3e50; }
+
+h3 {
+  font-family: "Kalam", cursive;
+  font-size: 1.7em;
+  color: white; }
+
+.h3--proyecto1 {
+  color: #222E3E; }
+
+.parrafo {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 2em; }
+
+.parrafo--proyecto {
+  font-size: 1.5em;
+  color: #222E3E; }
+
+.parrafo--donar {
+  color: #222E3E;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2em;
+  text-align: center; }
+
+@media (min-width: 994px) {
+  .proyecto h3 {
+    font-size: 1.6em; }
+  .parrafo--proyecto {
+    font-size: 1.3em; } }
+
+.parrafo--separador {
+  z-index: 50;
+  font-size: 2.5em;
+  background-color: rgba(35, 194, 160, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; }
+
+.parrafo--footer {
+  font-size: 1.3em;
+  margin: 0px;
+  padding: 0px; }
+
+@media (min-width: 994px) {
+  .parrafo--footer {
+    font-size: 1.5em; } }
+
+.content a {
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5em; }
+
+.navegador__lista li a {
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em; }
+
+.navegador992px__lista li a {
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.7em; }
+
+.parrafo--copyright {
+  font-size: 1em; }
+
+.formContacto {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.3em;
+  font-weight: bold; }
+
+.formDonar {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.3em;
+  font-weight: bold; }
+
+/* rgb (35, 194, 160) */
+.navegador {
+  background-color: #4DAA57; }
+
+.content {
+  background-color: #4DAA57; }
+
+.collapsible {
+  background-color: white; }
+
+.collapsible__icon {
+  color: #47edc9; }
+
+.navegador992px {
+  background-color: #4DAA57; }
+
+.nosotros {
+  background-color: rgba(35, 194, 160, 0.8); }
+
+.contacto {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+/* MAP */
+/* EACH */
+.proyecto--main {
+  background-color: #1685E5; }
+
+.proyecto--1 {
+  background-color: white; }
+
+.proyecto--2 {
+  background-color: #ffc107; }
+
+.proyecto--3 {
+  background-color: #27b092; }
+
+footer {
+  background-color: #2c3e50; }
+
+.copyright {
+  background-color: #222E3E; }
+
+.header {
+  display: flex;
+  justify-content: center; }
+
+.header__logo {
+  width: 100%;
+  display: flex;
+  justify-self: center; }
+
+@media (min-width: 992px) {
+  .header__logo {
+    width: 40%;
+    display: flex;
+    padding-top: 60px; } }
+
+.logo_Hashomer {
+  height: 45%;
+  width: 30%;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.separador__fondo {
+  width: 220%;
+  height: 100vh;
+  opacity: 0.85;
+  position: fixed;
+  top: 0px;
+  right: -170px;
+  float: right;
+  z-index: -1; }
+
+@media (min-width: 994px) {
+  .separador__fondo {
+    width: 130%;
+    height: 80rem;
+    opacity: 0.85;
+    position: fixed;
+    top: -280px;
+    right: -300px;
+    float: right;
+    z-index: -1; } }
+
+.imagen1__logo_Hashomer {
+  justify-self: center;
+  border-radius: 25px; }
+
+.proyecto__imagen {
+  width: 90%;
+  height: auto;
+  padding: 20px 10px;
+  border-radius: 20px; }
+
+@media (min-width: 994px) {
+  .proyecto__imagen {
+    width: 60%; } }
+
+/* TITULO DEL NAV */
+.h1__animation {
+  transition: 0.5s; }
+
+.h1__animation:hover {
+  color: #47edc9; }
+
+/* LINKS DEL NAV */
+.navegador992px__btns {
+  transition: 0.3s; }
+
+.navegador992px__btns:hover {
+  transform: translate(5px, 5px);
+  background-color: #23c29f; }
+
+/* NAVEGADOR COLLAPSE PARA PANTALLAS PEQUEÑAS */
+.navegador {
+  height: 5rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "brand button";
+  justify-content: center;
+  align-items: center;
+  z-index: 100; }
+
+@media (min-width: 992px) {
+  .navegador {
+    display: none; } }
+
+.navegador__brand {
+  grid-area: brand;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+.collapsible {
+  grid-area: button;
+  width: 3.5em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-align: center; }
+
+.collapsible__icon {
+  font-size: 2.5rem; }
+
+li {
+  padding-right: 10px; }
+
+.content {
+  position: absolute;
+  top: 4.9em;
+  left: 0;
+  width: 100%;
+  padding: 5px 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: right;
+  text-decoration: none;
+  list-style: none; }
+
+/* NAVEGADOR PARA PANTALLAS GRANDES */
+.navegador992px {
+  height: 11vh;
+  width: 100%;
+  padding-top: 5px;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "brand btns";
+  justify-content: center;
+  align-items: center;
+  z-index: 100; }
+
+@media (max-width: 992px) {
+  .navegador992px {
+    display: none; } }
+
+.navegador992px__brand, .navegador992px__brand a {
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .navegador992px__brand a {
+    padding: 0px;
+    margin: 0px; }
+
+.navegador992px__lista {
+  grid-area: btns;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center; }
+
+.navegador992px__btns {
+  margin-right: 12px;
+  margin-left: 12px;
+  padding: 0px 5px;
+  border-radius: 15px;
+  transition: 0.3s; }
+
+.headerIndex {
+  background-color: white;
+  height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.header__flecha {
+  font-size: 4rem;
+  color: #23c29f; }
+
+footer {
+  height: 90vh;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 80%;
+  grid-template-areas: "lugar1" "lugar2" "redes1" "redes2" "logo1" "logo2";
+  justify-content: center;
+  justify-items: center;
+  padding-top: 30px; }
+
+@media (min-width: 994px) {
+  footer {
+    height: 50vh;
+    width: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas: "lugar1 redes1 logo1" "lugar2 redes2 logo2"; } }
+
+.footer__titulo {
+  align-self: end;
+  height: auto; }
+
+.footer__texto {
+  align-self: start; }
+
+@media (min-width: 994px) {
+  .footer__titulo {
+    margin: 20px 20px 0px 20px; } }
+
+.footer__titulo--lugar {
+  grid-area: lugar1; }
+
+.footer__titulo--redes {
+  grid-area: redes1; }
+
+.footer__titulo--logo {
+  grid-area: logo1; }
+
+.footer__texto--lugar {
+  grid-area: lugar2; }
+
+.footer__texto--redes {
+  grid-area: redes2; }
+
+.footer__texto--logo {
+  grid-area: logo2; }
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  height: 7vh; }
+
+/* PROYECTOS */
+.proyecto--main {
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+.seccion__titulo--proyectos {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+
+.iconoEstrella {
+  color: white;
+  font-size: 2.5rem; }
+
+.proyecto {
+  width: 90%;
+  height: auto;
+  box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 10px; }
+
+.proyecto--1 a {
+  display: inherit;
+  flex-flow: row;
+  justify-content: center; }
+
+@media (min-width: 994px) {
+  .proyecto {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 10px;
+    box-shadow: 20px 0px 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 20px 0 rgba(0, 0, 0, 0.5); } }
+
+.contacto {
+  padding-top: 30px; }
+
+.formularioDeContacto {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px; }
+
+.formContacto {
+  width: 90%;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-auto-columns: auto auto;
+  grid-template-areas: "formNombre formApellido" "formEmail formTelefono" "formMotivo formMotivo" "formTextArea formTextArea" "formNews formNews" "boton boton";
+  grid-row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+
+.formNombre {
+  grid-area: formNombre; }
+
+.formApellido {
+  grid-area: formApellido; }
+
+.formEmail {
+  grid-area: formEmail; }
+
+.formTelefono {
+  grid-area: formTelefono; }
+
+.formMotivo {
+  grid-area: formMotivo;
+  padding: 10px; }
+
+.formTextArea {
+  grid-area: formTextArea; }
+
+.formNews {
+  grid-area: formNews; }
+
+.boton {
+  grid-area: boton;
+  justify-self: center;
+  margin-right: 10px;
+  padding-bottom: 10px; }
+
+.boton__boton {
+  border-radius: 10px;
+  border: 3px solid #47edc9;
+  background-color: #47edc9; }
+
+input, select, textarea {
+  border: 2px solid #47edc9;
+  border-radius: 5px; }
+
+/* FIN CONTACTO */
+/* rgb (35, 194, 160) */
+.navegador {
+  background-color: #4DAA57; }
+
+.content {
+  background-color: #4DAA57; }
+
+.collapsible {
+  background-color: white; }
+
+.collapsible__icon {
+  color: #47edc9; }
+
+.navegador992px {
+  background-color: #4DAA57; }
+
+.nosotros {
+  background-color: rgba(35, 194, 160, 0.8); }
+
+.contacto {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+/* MAP */
+/* EACH */
+.proyecto--main {
+  background-color: #1685E5; }
+
+.proyecto--1 {
+  background-color: white; }
+
+.proyecto--2 {
+  background-color: #ffc107; }
+
+.proyecto--3 {
+  background-color: #27b092; }
+
+footer {
+  background-color: #2c3e50; }
+
+.copyright {
+  background-color: #222E3E; }
+
+.donar_titulo {
+  height: auto;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 20px; }
+
+.formularioDonar {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center; }
+
+.formDonar {
+  width: 373px;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-areas: "donarNombre donarApellido" "donarEmail donarEmail" "donarAnonimo donarAnonimo" "donarTextArea donarTextArea" "donarBotones donarBotones";
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 10px; }
+
+.donarNombre {
+  grid-area: donarNombre; }
+
+.donarApellido {
+  grid-area: donarApellido; }
+
+.donarEmail {
+  grid-area: donarEmail; }
+
+.donarAnonimo {
+  grid-area: donarAnonimo; }
+
+.donarTextArea {
+  grid-area: donarTextArea; }
+
+.donarBotones {
+  grid-area: donarBotones; }
+
+.botonEnviar {
+  height: 30px;
+  font-size: 0.8em;
+  background-color: #47edc9; }
+
+* {
+  margin: 0px;
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #2c3e50;
+  background-color: white; }
+
+/* SEPARADOR INDEX */
+.separador {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: start;
+  /* Background Main Index 
+	background-image: url(../assets/fondoEstrella.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  	background-position: right;
+  	background-size: 70rem;
+  	*/ }
+
+/* FIN SEPARADPOR */
+/* NOSOTROS */
+.nosotros {
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+
+.seccion__titulo {
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+  .seccion__titulo .iconoEstrella {
+    color: white;
+    font-size: 2.5rem; }
+  .seccion__titulo .iconoEstrella--contacto {
+    color: #222E3E;
+    font-size: 2.5rem; }
+
+.nosotros__parrafo {
+  width: 80%; }

@@ -1,0 +1,53 @@
+/* PROYECTOS */
+.proyecto--main{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.seccion__titulo--proyectos{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.iconoEstrella {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.proyecto{
+	width: 90%;
+	height: auto;
+	box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	border-radius: 15px;
+	margin: 20px;
+	padding: 10px;
+}
+
+.proyecto--1 {
+	a {
+		display: inherit;
+		flex-flow: row;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 994px) {
+	.proyecto {
+		width: 100%;
+		height: auto;
+		border-radius: 0px;
+		margin: 0px;
+		padding: 10px;
+		box-shadow: 20px 0px 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 20px 0 rgba(0, 0, 0, 0.5);
+	}
+}

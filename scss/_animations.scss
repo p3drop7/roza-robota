@@ -1,0 +1,19 @@
+/* TITULO DEL NAV */
+.h1__animation {
+	transition: 0.5s;
+}
+
+.h1__animation:hover {
+	color: #47edc9;
+}
+
+
+/* LINKS DEL NAV */
+.navegador992px__btns {
+	transition: 0.3s;
+}
+
+.navegador992px__btns:hover {
+	transform: translate(5px, 5px);
+	background-color: #23c29f;
+}

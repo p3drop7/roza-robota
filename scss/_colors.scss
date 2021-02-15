@@ -1,0 +1,48 @@
+$white--opaco: rgba(255, 255, 255, 0.8);
+
+$green1: #27b092;
+$green2: #47edc9;
+$green3: #4DAA57;
+$green4: #23c29f; /* rgb (35, 194, 160) */
+$green4--opaco: rgba(35, 194, 160, 0.8);
+
+$gray: #222E3E;
+$gray2: #2c3e50;
+
+$blue: #1685E5;
+
+$yellow: #ffc107;
+
+.navegador { background-color: $green3; }
+
+.content { background-color: $green3; }
+
+.collapsible { background-color: white; }
+
+.collapsible__icon { color: $green2; }
+
+.navegador992px { background-color: $green3; }
+
+.nosotros { background-color: $green4--opaco; }
+
+.contacto { background-color: $white--opaco; }
+
+/* MAP */
+$proyectos: (
+	main: #1685E5,
+	1: white,
+	2: #ffc107,
+	3: #27b092,
+);
+
+/* EACH */
+@each $proyecto, $color in $proyectos {
+	.proyecto--#{$proyecto}{
+		background-color: $color;
+	}
+}
+
+footer { background-color: $gray2; }
+
+.copyright { background-color: $gray; }
+

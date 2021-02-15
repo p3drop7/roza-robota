@@ -1,0 +1,71 @@
+.contacto {
+	padding-top: 30px;
+}
+
+.formularioDeContacto {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+.formContacto {
+	width: 90%;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-auto-columns: auto auto;
+	grid-template-areas: 
+		"formNombre formApellido"
+		"formEmail formTelefono"
+		"formMotivo formMotivo"
+		"formTextArea formTextArea"
+		"formNews formNews"
+		"boton boton";
+	grid-row-gap: 10px;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.formNombre {grid-area: formNombre;}
+
+.formApellido {grid-area: formApellido;}
+
+.formEmail {grid-area: formEmail;}
+
+.formTelefono {grid-area: formTelefono;}
+
+.formMotivo {
+	grid-area: formMotivo;
+	padding: 10px;
+}
+
+.formTextArea {grid-area: formTextArea;}
+
+.formNews {grid-area: formNews;}
+
+.boton {
+	grid-area: boton;
+	justify-self: center;
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+
+.boton__boton {
+	border-radius: 10px;
+	border: 3px solid #47edc9;
+	background-color: #47edc9;
+}
+
+input { 
+	border: 2px solid #47edc9;
+	border-radius: 5px;
+}
+
+select {
+	@extend input;
+}
+
+textarea {
+	@extend input;
+}
+/* FIN CONTACTO */

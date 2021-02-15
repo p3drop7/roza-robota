@@ -48,7 +48,7 @@
 				<li><a href="../index.html">Inicio</a></li>
         		<li><a href="../index.html#nosotros">Nosotros</a></li>
         		<li><a href="../index.html#contacto">Contacto</a></li>
-        		<li><a href="../proyectos.html">Proyectos</a></li>
+        		<li><a href="proyectos.html">Proyectos</a></li>
         	</ul>
 	</nav>	
 
@@ -62,16 +62,105 @@
 			<li class="navegador992px__btns"><a href="../index.html">Inicio</a></li>
         	<li class="navegador992px__btns"><a href="../index.html#nosotros">Nosotros</a></li>
         	<li class="navegador992px__btns"><a href="../index.html#contact">Contacto</a></li>
-        	<li class="navegador992px__btns"><a href="../proyectos.html">Proyectos</a></li>
+        	<li class="navegador992px__btns"><a href="proyectos.html">Proyectos</a></li>
         </ul>
+    </nav>    
 
     <main>
 		
-		<div>
-			<h2 class="animate__animated animate__fadeInDown">PROYECTOS</h2>
+		<div class="donar_titulo">
+			<h2 class="animate__animated animate__fadeInDown h2--donar">Donar</h2>
+			<p class="parrafo--donar">¡Apoyanos con tu donación!</p>
 		</div>
 
+		<div class="formularioDonar">
+
+				<form action="#" method="GET" class="formDonar">
+
+					<dir class="donarNombre">
+						<label for="nombre"> Nombre:<br>
+						<input type="text" name="nombre" placeholder="Ingresá tu nombre">
+						</label>
+					</dir>	
+
+					<div class="donarApellido">
+						<label for="apellido"> Apellido:<br>
+						<input type="text" name="apellido" placeholder="Ingresá tu apellido">
+						</label>
+					</div>
+				
+					<div class="donarEmail">
+						<label for="email"> Email:<br>
+						<input type="email" name="email" placeholder="Ingresá tu email" required>
+						</label>
+					</div>
+					
+					<div class="donarAnonimo">
+						<label for="anonimo"> Deseo que mi donación sea anónima
+						<input type="checkbox" name="anonimo" value="1">
+						</label>
+					</div>
+					
+					<div class="donarTextArea">
+						<textarea rows="8" cols="40" placeholder="Comentarios"></textarea>
+					</div>
+					
+					<div class="donarBotones">
+						<input type="submit" value="Enviar" class="botonEnviar">
+					</div>
+				
+				</form>	
+
 	</main>	
+
+	<footer>
+
+		<div class="footer__titulo footer__titulo--lugar">
+			<h3>LUGAR</h3>
+		</div>
+		<div class="footer__texto footer__texto--lugar">
+			<p class="parrafo parrafo--footer">Buenos Aires<br>
+				Argentina</p>
+		</div>
+
+		<div class="footer__titulo footer__titulo--redes">
+			<h3>NUESTRAS REDES SOCIALES:</h3> 
+		</div>	
+		<div class="footer__texto footer__texto--redes">
+			<a class="parrafo parrafo--footer" href="https://www.facebook.com/CCRozaRobota/" target="_blank">Facebook</a>
+			<a class="parrafo parrafo--footer" href="https://www.instagram.com/ccrozarobota/" target="_blank">Instagram</a>
+		</div>
+		
+		<div class="footer__titulo footer__titulo--logo">
+			<h3>Casa de cultura Roza Robota</h3>
+		</div>
+		<div class="footer__texto footer__texto--logo">	
+			<a href="#top">Subir</a>
+		</div>
+
+	</footer>
+
+	<div class="copyright">
+        <p class="parrafo parrafo--copyright">Copyright © Pedro Palencia 2021</p>
+    </div>
+
+	<!-- JS del menu collapsible -->
+	<script type="text/javascript">
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+  		coll[i].addEventListener("click", function() {
+    		this.classList.toggle("active");
+    		var content = this.nextElementSibling;
+    		if (content.style.maxHeight){
+      		content.style.maxHeight = null;
+    		}			 else {
+      		content.style.maxHeight = content.scrollHeight + "px";
+    		} 
+  		});
+		}
+	</script>
 	
 </body>
 </html>
