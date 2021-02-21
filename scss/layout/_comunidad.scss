@@ -1,11 +1,11 @@
-/* PROYECTOS */
-.proyecto--main{
+/* COMUNIDAD */
+.comunidad--main{
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 }
 
-.seccion__titulo--proyectos{
+.seccion__titulo--comunidad{
 	padding-top: 40px;
 	padding-bottom: 40px;
 	display: flex;
@@ -19,7 +19,7 @@
 	font-size: 2em;
 }
 
-.proyecto{
+.comunidad{
 	width: 90%;
 	height: auto;
 	box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -33,7 +33,7 @@
 	padding: 10px;
 }
 
-.proyecto--1 {
+.comunidad--1 {
 	a {
 		display: inherit;
 		flex-flow: row;
@@ -42,7 +42,7 @@
 }
 
 @media (min-width: 994px) {
-	.proyecto {
+	.comunidad {
 		width: 100%;
 		height: auto;
 		border-radius: 0px;

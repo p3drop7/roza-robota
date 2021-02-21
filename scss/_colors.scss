@@ -23,19 +23,19 @@ $yellow: #ffc107;
 
 .navegador992px { background-color: white; }
 
-.nosotros { background-color: $green4--opaco; }
+.nosotros { background-color: white; }
 
 .contacto { background-color: $white--opaco; }
 
-$proyectos: (
+$comunidades: (
 	main: #1685E5,
 	1: white,
 	2: #ffc107,
 	3: #27b092,
 );
 
-@each $proyecto, $color in $proyectos {
-	.proyecto--#{$proyecto}{
+@each $comunidad, $color in $comunidades {
+	.proyecto--#{$comunidad}{
 		background-color: $color;
 	}
 }

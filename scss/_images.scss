@@ -13,42 +13,7 @@
 	}
 }
 
-.logo_Hashomer {
-	height: 45%;
-	width: 30%;
-	margin-bottom: 25px;
-	border-radius: 20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.imagen1__logo_Hashomer {
-	justify-self: center;
-	border-radius: 25px;
-}
-
-.header {
-	display: flex;
-	justify-content: center;
-}
-
-.slideshow__image {
-	height: auto;
-	width: 135%;
-	position: relative;
-    left: -20%;
-}
-
-@media (min-width: 994px) {
-	.slideshow__image {
-		height: auto;
-		width: 100%;
-		position: absolute;
-   	 	top: 50px;
-    	left: -2px;
-	}
-}
-
-.proyecto__imagen {
+.comunidad__imagen {
 	width: 90%;
 	height: auto;
 	padding: 20px 10px;
@@ -56,8 +21,7 @@
 } 
 
 @media (min-width: 994px) {
-	.proyecto__imagen {
+	.comunidad__imagen {
 		width: 60%;
 	}
 }
-

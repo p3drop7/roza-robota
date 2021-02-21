@@ -1,6 +1,6 @@
 /* NAVEGADOR COLLAPSE PARA PANTALLAS PEQUEÑAS */
 .navegador {
-	height: 6rem;
+	height: 5rem;
 	width: 100%;
 	padding-top: 8px;
 	position: sticky;
@@ -12,7 +12,7 @@
 		"brand button";
 	justify-content: center;
 	align-items: center;
-	z-index: 100;
+	z-index: 10000;
 }
 
 @media (min-width: 992px) {
@@ -73,7 +73,7 @@ li {
 		"brand btns";
 	justify-content: center;
 	align-items: center;
-	z-index: 100;
+	z-index: 10000;
 }
 
 @media (max-width: 992px) {

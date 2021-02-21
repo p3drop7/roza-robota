@@ -7,7 +7,7 @@
 @import "layout/navigation.scss";
 @import "layout/headerIndex.scss";
 @import "layout/footer.scss";
-@import "layout/proyectos.scss";
+@import "layout/comunidad.scss";
 @import "layout/contacto.scss";
 @import "layout/donar.scss";
 
@@ -24,12 +24,6 @@ body {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-}
-
-@media (min-width: 992px) { 
-	header, main, footer {
-	width: 90vw;
-	}
 }
 
 /* SEPARADOR INDEX */
@@ -53,23 +47,20 @@ body {
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
+	width: 70vw;
 }
 
 .seccion__titulo{
 	padding-bottom: 40px;
+	left: 20%;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	
-	.iconoEstrella {
-		color: white;
-		font-size: 2.5rem;
-	}
-	.iconoEstrella--contacto {
-		color: #222E3E;
-		font-size: 2.5rem;
-	}
+}
+.h2--nosotros {
+	position: relative;
+    right: 163%;
 }
 
 .nosotros__parrafo {
