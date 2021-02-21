@@ -13,7 +13,7 @@ $blue: #1685E5;
 
 $yellow: #ffc107;
 
-.navegador { background-color: $green3; }
+.navegador { background-color: white; }
 
 .content { background-color: $green3; }
 
@@ -21,13 +21,12 @@ $yellow: #ffc107;
 
 .collapsible__icon { color: $green2; }
 
-.navegador992px { background-color: $green3; }
+.navegador992px { background-color: blue; }
 
 .nosotros { background-color: $green4--opaco; }
 
 .contacto { background-color: $white--opaco; }
 
-/* MAP */
 $proyectos: (
 	main: #1685E5,
 	1: white,
@@ -35,7 +34,6 @@ $proyectos: (
 	3: #27b092,
 );
 
-/* EACH */
 @each $proyecto, $color in $proyectos {
 	.proyecto--#{$proyecto}{
 		background-color: $color;

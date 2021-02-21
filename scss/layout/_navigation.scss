@@ -1,7 +1,8 @@
 /* NAVEGADOR COLLAPSE PARA PANTALLAS PEQUEÑAS */
 .navegador {
-	height: 5rem;
+	height: 6rem;
 	width: 100%;
+	padding-top: 8px;
 	position: sticky;
 	top: 0;
 	display: grid;
@@ -23,9 +24,8 @@
 .navegador__brand {
 	grid-area: brand;
 	display: flex;
-	flex-flow: column;
-	justify-content: flex-start;
-	align-items: center;
+	flex-flow: row;
+	justify-content: center;
 }
 
 .collapsible {
@@ -48,10 +48,10 @@ li {
 
 .content {
 	position: absolute;
-	top: 4.9em;
+	top: 6.3em;
 	left: 0;
 	width: 100%;
-	padding: 5px 0px;
+	padding: 0px;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
@@ -62,9 +62,8 @@ li {
 
 /* NAVEGADOR PARA PANTALLAS GRANDES */	
 .navegador992px {
-	height: 11vh;
+	height: 13vh;
 	width: 100%;
-	padding-top: 5px;
 	position: sticky;
 	top: 0;
 	display: grid;
@@ -84,10 +83,11 @@ li {
 }
 
 .navegador992px__brand {
+	height: 100%;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	a {
+	a {		
 		@extend .navegador992px__brand;
 		padding: 0px;
 		margin: 0px;

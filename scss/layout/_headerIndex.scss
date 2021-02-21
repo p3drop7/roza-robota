@@ -1,13 +1,40 @@
 .headerIndex {
 	background-color: white;
-	height: 95vh;
 	display: flex;
-	flex-flow: column;
-	justify-content: space-around;
+	flex-flow: row;
+	justify-content: center;
 	align-items: center;
 }
 
-.header__flecha {
-	font-size: 4rem;
-	color: #23c29f;
+h1 {
+	position: relative;
+	top: 55vh;
+	color: white;
+}
+
+@media (min-width: 992px) {
+	h1 {
+		color: white;
+		width: auto;
+		padding: 5px 10px;
+		display: inline-block;
+		position: relative;
+    	top: 80vh;
+    	left: 30%;
+    	background-color: rgb(84, 86, 89)
+	}
+}
+    
+.headerIndex__ul {
+	margin-top: -39px;
+	padding-inline-start: 0px;
+}
+
+.headerIndex__ul li {
+	list-style: none;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin: 0px;
+	max-width: 100vw;
+	overflow: hidden;
 }

@@ -18,8 +18,8 @@
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 
-	<!-- Kalam -->
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+	<!-- Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
     <!-- Open Sans Condensed -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -35,13 +35,9 @@
 
 	<!-- Navegador Collapse para pantallas pequeñas -->
 	<nav class="navegador animate__animated animate__fadeInDown">
-		<div class="navegador__brand">
-			<a class="h1__animation" href="#top">
-			<h1><span class="h1--smaller">Casa de Cultura</span><br>
-			ROZA ROBOTA</h1>
-			</a>
-			<p>wkhvbeifbveirv</p>
-		</div>
+		<a href="#top" class="navegador__brand">
+			<img class="nav__logo" src="assets/logoFondo.jpg" alt="Logo Roza Robota">
+		</a>
 		<button type="button" class="collapsible">
 			<i class="fas fa-angle-double-down collapsible__icon"></i>
 		</button>	
@@ -55,10 +51,9 @@
 
 	<!-- Navegador para pantallas grandes -->
 	<nav class="navegador992px animate__animated animate__fadeInDown">
-		<div class="navegador992px__brand">
-			<h1 class="h1_992px h1_992px--smaller">Casa de Cultura</h1>
-			<a href="#top"><h1 class="h1_992px h1__animation">ROZA ROBOTA</h1></a>
-		</div>
+		<a href="#top" class="navegador992px__brand">
+			<img class="nav__logo" src="assets/logoFondo.jpg" alt="Logo Roza Robota">
+		</a>
 		<ul class="navegador992px__lista">
         	<li class="navegador992px__btns"><a href="#nosotros">Nosotros</a></li>
         	<li class="navegador992px__btns"><a href="#contacto">Contacto</a></li>
@@ -67,10 +62,14 @@
         </ul>
 	</nav>
 
-	<!-- LOGO -->
 	<header class="headerIndex" id="top">
-		<img src="assets/logoFondo.jpg" alt="logo" class="header__logo animate__animated animate__zoomIn">
-		<i class="fas fa-angle-down header__flecha"></i>
+		<ul class="headerIndex__ul">
+			<h1>Casa de Cultura Roza Robota</h1>
+			<li><img class="slideshow__image slideshow__image--1" src="assets/file_5.jpeg"></li>
+			<li><img class="slideshow__image slideshow__image--2" src="assets/file_11.jpeg"></li>
+			<li><img class="slideshow__image slideshow__image--3" src="assets/file_2.jpeg"></li>
+			<li><img class="slideshow__image slideshow__image--4" src="assets/file_3.jpeg"></li>
+		</ul>
 	</header>
 
 	<!-- MAIN INDEX -->
@@ -78,7 +77,6 @@
 
 		<!-- Separador -->
 		<section class="separador">
-			<img class="separador__fondo" src="assets/fondoGrande.jpg">
 			<p class="parrafo parrafo--separador">¡Kehilat Bogrim*ot de Hashomer Hatzair Argentina!</p>
             <p class="parrafo parrafo--separador">¡Por un marco judeo humanista para todas, todos y todes!</p>
 		</section>
@@ -87,7 +85,7 @@
 		<section class="nosotros" id="nosotros">
 			
 			<div class="seccion__titulo" >
-				<h2>NOSOTROS</h2>
+				<h2>Nosotros</h2>
 				<i class="fas fa-star-of-david iconoEstrella"></i>
 			</div>
 

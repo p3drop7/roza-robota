@@ -1,50 +1,34 @@
 @import "colors.scss";
 
-
-$kalam: 'Kalam', cursive;
+$lato: 'Lato', sans-serif;
 $openSans: 'Open Sans Condensed', sans-serif;
-
 
 a {
 	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
 }
 
 h1 {
-	font-family: $kalam;
-	font-size: 1.6rem;
-	color: white;
-}
-
-.h1--smaller {
-	font-size: 1rem;
-}
-
-.h1_992px {
-	font-size: 2.3em;
-	color: white;
-	padding: 0px;
-	margin: 0px;
-}
-
-.h1_992px--smaller {
-	font-size: 1.5em;
-	padding: 0px;
-	margin: 0px;
+	font-family: $lato;
+	color: $blue;
+	text-align: center;
+	z-index: 2000;
 }
 
 h2 {
 	text-align: center;
-	font-family: $kalam;
+	font-family: $lato;
 	font-size: 3rem;
 	color: white;
 }
 
 .h2--contacto {
-	color: #222E3E;
+	color: $gray;
 }
 
 .proyectos h2 {
-	color: #222E3E;
+	color: $gray;
 }
 
 .h2--donar {
@@ -52,13 +36,13 @@ h2 {
 }
 
 h3 {
-	font-family: $kalam;
+	font-family: $lato;
 	font-size: 1.7em;
 	color: white;
 }
 
 .h3--proyecto1 {
-	color: #222E3E
+	color: $gray;
 }
 
 .parrafo { 
@@ -70,7 +54,7 @@ h3 {
 
 .parrafo--proyecto {
 	font-size: 1.5em;
-	color: #222E3E;	
+	color: $gray;	
 }
 
 .parrafo--donar {
@@ -117,13 +101,13 @@ h3 {
 }
 
 .navegador__lista li a{
-	color: white;
+	color: $green3;
 	font-family: $openSans;
 	font-size: 1em;
 }
 
 .navegador992px__lista li a{
-	color: white;
+	color: $green3;
 	font-family: $openSans;
 	font-size: 1.7em;
 }
