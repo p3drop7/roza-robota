@@ -218,7 +218,9 @@ footer {
   .slideshow__image {
     height: auto;
     width: 100%;
-    position: unset; } }
+    position: absolute;
+    top: 50px;
+    left: -2px; } }
 
 .proyecto__imagen {
   width: 90%;
