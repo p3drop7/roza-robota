@@ -130,7 +130,8 @@ h3 {
 .navegador992px__lista li a {
   color: #23c29f;
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.7em; }
+  font-size: 1.7em;
+  transition: 0.3s; }
 
 .parrafo--copyright {
   font-size: 1em; }
@@ -229,7 +230,10 @@ footer {
 
 .navegador992px__btns:hover {
   transform: translate(5px, 5px);
-  background-color: #23c29f; }
+  background-color: rgba(35, 194, 160, 0.8); }
+
+.navegador992px__lista li a:hover {
+  color: white; }
 
 /* NAVEGADOR COLLAPSE PARA PANTALLAS PEQUEÑAS */
 .navegador {
@@ -658,17 +662,6 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center; }
-
-/* SEPARADOR INDEX */
-.separador {
-  width: 100%;
-  height: 110vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: start; }
 
 /* NOSOTROS */
 .nosotros {

@@ -14,6 +14,9 @@
 
 .navegador992px__btns:hover {
 	transform: translate(5px, 5px);
-	background-color: #23c29f;
+	background-color: rgba(35, 194, 160, 0.8);
 }
 
+.navegador992px__lista li a:hover {
+	color: white;
+}
