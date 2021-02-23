@@ -1,26 +1,33 @@
 .contacto {
+	width: 100vw;
 	padding-top: 30px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 }
 
 .formularioDeContacto {
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	padding-bottom: 40px;
 }
 
 .formContacto {
-	width: 30%;
+	width: 100%;
 	display: grid;
-	grid-template-rows: auto auto auto auto auto auto;
-	grid-auto-columns: auto auto;
+	grid-template-rows: auto auto auto auto auto auto auto auto;
+	grid-auto-columns: 100%;
 	grid-template-areas: 
-		"formNombre formApellido"
-		"formEmail formTelefono"
-		"formMotivo formMotivo"
-		"formTextArea formTextArea"
-		"formNews formNews"
-		"boton boton";
-	grid-row-gap: 10px;
+		"formNombre"
+		"formApellido"
+		"formEmail"
+		"formTelefono"
+		"formMotivo"
+		"formTextArea"
+		"formNews"
+		"boton";
+	grid-row-gap: 5px;
 	justify-content: center;
 	align-items: center;
 	justify-items: center;
@@ -28,7 +35,7 @@
 
 @media (min-width: 992px) {
 	.formContacto {
-		width: 90%;
+		width: 100%;
 		display: grid;
 		grid-template-rows: auto auto auto auto auto auto;
 		grid-auto-columns: auto auto;
@@ -40,52 +47,112 @@
 			"formNews formNews"
 			"boton boton";
 		grid-row-gap: 10px;
+		grid-column-gap: 30px;
 		justify-content: center;
 		align-items: center;
 		justify-items: center;
 	}
 }
 
-.formNombre {grid-area: formNombre;}
+.formNombre { 
+	grid-area: formNombre; 
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
 
-.formApellido {grid-area: formApellido;}
+.formApellido {
+	grid-area: formApellido;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
 
-.formEmail {grid-area: formEmail;}
+.formEmail {
+	grid-area: formEmail;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
 
-.formTelefono {grid-area: formTelefono;}
+.formTelefono {
+	grid-area: formTelefono;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
 
 .formMotivo {
 	grid-area: formMotivo;
-	padding: 10px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	text-align: center;
+
 }
 
-.formTextArea {grid-area: formTextArea;}
+.formMotivo label select {
+	font-size: 0.5em;
+}
 
-.formNews {grid-area: formNews;}
+.formTextArea {
+	grid-area: formTextArea;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.formNews {
+	grid-area: formNews;
+}
+
+.formNews label {
+	display: flex;
+	flex-flow: row;
+	align-items: flex-end;
+}
 
 .boton {
 	grid-area: boton;
 	justify-self: center;
-	margin-right: 10px;
-	padding-bottom: 10px;
 }
 
 .boton__boton {
 	border-radius: 10px;
-	border: 3px solid #47edc9;
-	background-color: #47edc9;
+	margin-top: 20px;
+	height: 60px;
+	width: 40vw;
 }
 
-input { 
-	border: 2px solid #47edc9;
-	border-radius: 5px;
+input {
+	height: 40px;
+	width: 100%;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;	
+}
+
+input:focus {
+	background-color: rgba(35, 194, 160, 0.3)
+}
+
+.input--one-line {
+	border-width: 0px 0px 2px 0px;
+	border-radius: 0px;
+}
+
+.input--news {
+	width: 20px;
+	margin-left: 8px;
 }
 
 select {
 	@extend input;
+	width: 60%;
+	height: 37px;
 }
 
 textarea {
 	@extend input;
+	height: 150px;
 }
-/* FIN CONTACTO */

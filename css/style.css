@@ -16,11 +16,17 @@
 .navegador992px {
   background-color: white; }
 
+input, select, textarea {
+  border-color: #23c29f; }
+
 .nosotros {
   background-color: white; }
 
 .contacto {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: white; }
+
+.boton__boton {
+  background-color: #23c29f; }
 
 .proyecto--main {
   background-color: #1685E5; }
@@ -102,20 +108,10 @@ h3 {
   font-size: 2em;
   text-align: center; }
 
-@media (min-width: 994px) {
-  .comunidad h3 {
-    font-size: 1.6em; }
-  .parrafo--comunidad {
-    font-size: 1.3em; } }
-
 .parrafo--footer {
   font-size: 1.3em;
   margin: 0px;
   padding: 0px; }
-
-@media (min-width: 994px) {
-  .parrafo--footer {
-    font-size: 1.5em; } }
 
 .content a {
   color: white;
@@ -138,13 +134,26 @@ h3 {
 
 .formContacto {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.3em;
-  font-weight: bold; }
+  font-size: 2em; }
+
+input, select, textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 0.6em; }
 
 .formDonar {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.3em;
   font-weight: bold; }
+
+@media (min-width: 992px) {
+  .comunidad h3 {
+    font-size: 1.6em; }
+  .parrafo--comunidad {
+    font-size: 1.3em; }
+  .parrafo--footer {
+    font-size: 1.5em; }
+  input, select, textarea {
+    font-size: .7em; } }
 
 /* rgb (35, 194, 160) */
 .navegador {
@@ -162,11 +171,17 @@ h3 {
 .navegador992px {
   background-color: white; }
 
+input, select, textarea {
+  border-color: #23c29f; }
+
 .nosotros {
   background-color: white; }
 
 .contacto {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: white; }
+
+.boton__boton {
+  background-color: #23c29f; }
 
 .proyecto--main {
   background-color: #1685E5; }
@@ -188,7 +203,7 @@ footer {
 
 .nav__logo {
   width: auto;
-  height: 5em;
+  height: 6em;
   display: flex;
   justify-self: center; }
 
@@ -228,9 +243,9 @@ footer {
 
 /* NAVEGADOR COLLAPSE PARA PANTALLAS PEQUEÑAS */
 .navegador {
-  height: 5rem;
+  height: 5.5rem;
   width: 100%;
-  padding-top: 8px;
+  padding-top: 20px;
   position: sticky;
   top: 0;
   display: grid;
@@ -274,7 +289,7 @@ li {
 
 .content {
   position: absolute;
-  top: 6.3em;
+  top: 7.2em;
   left: 0;
   width: 100%;
   padding: 0px;
@@ -298,7 +313,7 @@ li {
   justify-content: center;
   align-items: center;
   z-index: 10000;
-  box-shadow: 0px 1px 12px 0px; }
+  box-shadow: 0px 0px 12px 0px; }
 
 @media (max-width: 992px) {
   .navegador992px {
@@ -508,74 +523,125 @@ footer {
     box-shadow: 20px 0px 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 20px 0 rgba(0, 0, 0, 0.5); } }
 
 .contacto {
-  padding-top: 30px; }
+  width: 100vw;
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
 
 .formularioDeContacto {
+  width: 90%;
   display: flex;
   justify-content: center;
   padding-bottom: 40px; }
 
 .formContacto {
-  width: 30%;
+  width: 100%;
   display: grid;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-auto-columns: auto auto;
-  grid-template-areas: "formNombre formApellido" "formEmail formTelefono" "formMotivo formMotivo" "formTextArea formTextArea" "formNews formNews" "boton boton";
-  grid-row-gap: 10px;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-auto-columns: 100%;
+  grid-template-areas: "formNombre" "formApellido" "formEmail" "formTelefono" "formMotivo" "formTextArea" "formNews" "boton";
+  grid-row-gap: 5px;
   justify-content: center;
   align-items: center;
   justify-items: center; }
 
 @media (min-width: 992px) {
   .formContacto {
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-rows: auto auto auto auto auto auto;
     grid-auto-columns: auto auto;
     grid-template-areas: "formNombre formApellido" "formEmail formTelefono" "formMotivo formMotivo" "formTextArea formTextArea" "formNews formNews" "boton boton";
     grid-row-gap: 10px;
+    grid-column-gap: 30px;
     justify-content: center;
     align-items: center;
     justify-items: center; } }
 
 .formNombre {
-  grid-area: formNombre; }
+  grid-area: formNombre;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px; }
 
 .formApellido {
-  grid-area: formApellido; }
+  grid-area: formApellido;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px; }
 
 .formEmail {
-  grid-area: formEmail; }
+  grid-area: formEmail;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px; }
 
 .formTelefono {
-  grid-area: formTelefono; }
+  grid-area: formTelefono;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px; }
 
 .formMotivo {
   grid-area: formMotivo;
-  padding: 10px; }
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center; }
+
+.formMotivo label select {
+  font-size: 0.5em; }
 
 .formTextArea {
-  grid-area: formTextArea; }
+  grid-area: formTextArea;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px; }
 
 .formNews {
   grid-area: formNews; }
 
+.formNews label {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end; }
+
 .boton {
   grid-area: boton;
-  justify-self: center;
-  margin-right: 10px;
-  padding-bottom: 10px; }
+  justify-self: center; }
 
 .boton__boton {
   border-radius: 10px;
-  border: 3px solid #47edc9;
-  background-color: #47edc9; }
+  margin-top: 20px;
+  height: 60px;
+  width: 40vw; }
 
 input, select, textarea {
-  border: 2px solid #47edc9;
+  height: 40px;
+  width: 100%;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 5px; }
 
-/* FIN CONTACTO */
+input:focus, select:focus, textarea:focus {
+  background-color: rgba(35, 194, 160, 0.3); }
+
+.input--one-line {
+  border-width: 0px 0px 2px 0px;
+  border-radius: 0px; }
+
+.input--news {
+  width: 20px;
+  margin-left: 8px; }
+
+select {
+  width: 60%;
+  height: 37px; }
+
+textarea {
+  height: 150px; }
+
 /* rgb (35, 194, 160) */
 .navegador {
   background-color: white; }
@@ -592,11 +658,17 @@ input, select, textarea {
 .navegador992px {
   background-color: white; }
 
+input, select, textarea {
+  border-color: #23c29f; }
+
 .nosotros {
   background-color: white; }
 
 .contacto {
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: white; }
+
+.boton__boton {
+  background-color: #23c29f; }
 
 .proyecto--main {
   background-color: #1685E5; }

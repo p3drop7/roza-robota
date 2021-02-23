@@ -23,9 +23,13 @@ $yellow: #ffc107;
 
 .navegador992px { background-color: white; }
 
+input { border-color: $green4; }
+
 .nosotros { background-color: white; }
 
-.contacto { background-color: $white--opaco; }
+.contacto { background-color: white; }
+
+.boton__boton { background-color: $green4; }
 
 $comunidades: (
 	main: #1685E5,

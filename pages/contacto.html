@@ -83,47 +83,50 @@
 
 				<div class="formNombre">
 					<label for="nombre" > Nombre:<br>
-					<input type="text" name="nombre" placeholder="Ingresá tu nombre" required>
+					<input type="text" name="nombre" required placeholder="*" class="input--one-line">
 					</label>
 				</div>
 
 				<div class="formApellido">
 					<label for="apellido">Apellido:<br>
-					<input type="text" name="apellido" placeholder="Ingresá tu apellido">
+					<input type="text" name="apellido" class="input--one-line">
 					</label>
 				</div>
 
 				<div class="formEmail">
 					<label for="email">Email:<br>
-					<input type="email" name="email" placeholder="Ingresá tu email" required>
+					<input type="email" name="email" required placeholder="*" class="input--one-line">
 					</label>
 				</div>
 					
 				<div class="formTelefono">
 					<label for="telefono">Teléfono:<br>
-					<input type="tel" name="telefono" placeholder="Ingresá tu teléfono">
+					<input type="tel" name="telefono" class="input--one-line">
 					</label>
 				</div>
 					
 				<div class="formMotivo">
-					<label for="motivo"> Motivo por el que nos contacta: 
+					<label for="motivo"> Motivo:
 						<select required>
-							<option label="seleccione"></option>
-							<option value="J">Jotam</option>
-							<option value="U">Ulpan</option>
-							<option value="H">Raices Urbanas (Huerta)</option>
-							<option value="O">Otras actividades</option>
+							<option label="Seleccioná"></option>
+							<option value="consulta">Consulta</option>
+							<option value="actividades">Actividades</option>
+							<option value="Hashomer">Hashomer Hatzair</option>
+							<option value="jotam">Jotam</option>
+							<option value="huera">Raices Urbanas (Huerta)</option>
+							<option value="meretz">Meretz</option>
+							<option value="otro">Otros</option>
 						</select>
 					</label>
 				</div>
 					
 				<div class="formTextArea">
-					<textarea rows="8" cols="40" placeholder="Tu mensaje" required></textarea>
+					<textarea placeholder="Escribí tu mensaje" required></textarea>
 				</div>
 
 				<div class="formNews">
-					<label for="newsletter"> Deseo recibir el newsletter
-					<input type="checkbox" name="newsletter" value="1">
+					<label for="newsletter"> Inscribime al newsletter
+					<input type="checkbox" name="newsletter" value="1" class="input--news">
 					</label>
 				</div>
 					
@@ -133,9 +136,42 @@
 
 			</form>
 		</div>
+
+		<footer>
+
+			<div class="footer__titulo footer__titulo--lugar">
+				<h3>LUGAR</h3>
+			</div>
+			<div class="footer__texto footer__texto--lugar">
+				<p class="parrafo parrafo--footer">Buenos Aires<br>
+				Argentina</p>
+			</div>
+
+			<div class="footer__titulo footer__titulo--redes">
+				<h3>NUESTRAS REDES SOCIALES:</h3> 
+			</div>	
+			<div class="footer__texto footer__texto--redes">
+				<a class="parrafo parrafo--footer" href="https://www.facebook.com/CCRozaRobota/" target="_blank">Facebook</a>
+				<a class="parrafo parrafo--footer" href="https://www.instagram.com/ccrozarobota/" target="_blank">Instagram</a>
+			</div>
+		
+			<div class="footer__titulo footer__titulo--logo">
+				<h3>Casa de cultura Roza Robota</h3>
+			</div>
+			<div class="footer__texto footer__texto--logo">	
+				<a href="#top">Subir</a>
+			</div>
+
+		</footer>
+
+		<div class="copyright">
+        	<p class="parrafo parrafo--copyright">Copyright © Pedro Palencia 2021</p>
+    	</div>
 		<!-- Fin FORMULARIO -->	
 
-		<!-- JS del menu collapsible -->
+	</main>
+
+	<!-- JS del menu collapsible -->
 	<script type="text/javascript">
 		var coll = document.getElementsByClassName("collapsible");
 		var i;
@@ -143,16 +179,13 @@
 		for (i = 0; i < coll.length; i++) {
   		coll[i].addEventListener("click", function() {
     		this.classList.toggle("active");
-    		var content = this.nextElementSibling;
-    		if (content.style.maxHeight){
-      		content.style.maxHeight = null;
+   			var content = this.nextElementSibling;
+   			if (content.style.maxHeight){
+    		content.style.maxHeight = null;
     		}			 else {
       		content.style.maxHeight = content.scrollHeight + "px";
     		} 
-  		});
-		}
-	</script>	
-
-	</main>
+  		});			}
+		</script>
 </body>
 </html>

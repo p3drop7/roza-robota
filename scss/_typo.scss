@@ -79,25 +79,10 @@ h3 {
 	text-align: center;
 }
 
-@media (min-width: 994px) {
-	.comunidad h3 {
-		font-size: 1.6em;
-	}
-	.parrafo--comunidad {
-		font-size: 1.3em;
-	}
-}
-
 .parrafo--footer {
 	font-size: 1.3em;
 	margin: 0px;
 	padding: 0px;
-}
-
-@media (min-width: 994px) {
-	.parrafo--footer {
-		font-size: 1.5em;
-	}	
 }
 
 .content a{
@@ -125,12 +110,31 @@ h3 {
 
 .formContacto  {
 	font-family: $openSans;
-	font-size: 1.3em;
-	font-weight: bold;
+	font-size: 2em;
+}
+
+input {
+	font-family: $lato;
+	font-size: 0.6em;
 }
 
 .formDonar {
 	font-family: $openSans;
 	font-size: 1.3em;
 	font-weight: bold;
+}
+
+@media (min-width: 992px) {
+	.comunidad h3 {
+		font-size: 1.6em;
+	}
+	.parrafo--comunidad {
+		font-size: 1.3em;
+	}
+	.parrafo--footer {
+		font-size: 1.5em;
+	}
+	input {
+		font-size: .7em;
+	}
 }
