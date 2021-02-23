@@ -124,6 +124,11 @@ input {
 	font-weight: bold;
 }
 
+.input_newsletter--boton {
+	font-family: $openSans;
+	font-size: 1em;
+}
+
 @media (min-width: 992px) {
 	.comunidad h3 {
 		font-size: 1.6em;

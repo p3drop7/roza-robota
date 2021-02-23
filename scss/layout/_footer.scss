@@ -1,20 +1,46 @@
 footer {
-	height: 90vh;
-	width: 100%;
+	height: auto;
+	width: 100vw;
 	text-align: center;
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-template-columns: 80%;
 	grid-template-areas: 
-		"lugar1"
-		"lugar2"
-		"redes1"
-		"redes2"
-		"logo1"
-		"logo2";
+		"titulo"
+		"redes"
+		"contacto"
+		"newsletter";
 	justify-content: center;
 	justify-items: center;	
 	padding-top: 30px;
+}
+
+.footer__area1 {
+	align-self: center;
+	height: auto;
+}
+
+.footer__area2 {
+	align-self: center;
+}
+
+.footer__area1--titulo { grid-area: titulo; }
+
+.footer__area2--redes { grid-area: redes; }
+
+.footer__area1--contacto { grid-area: contacto; }
+
+.footer__area2--newsletter { 
+	grid-area: newsletter; 
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.copyright {
+	text-align: center;
+	width: 100%;
+	height: 7vh;
 }
 
 @media (min-width: 994px) {
@@ -22,42 +48,30 @@ footer {
 		height: 50vh;
 		width: 100%;
 		grid-template-rows: 1fr 1fr;
-		grid-template-columns: 30% 30% 30%;
+		grid-template-columns: 1fr 1fr;
 		grid-template-areas: 
-			"lugar1 redes1 logo1"
-			"lugar2 redes2 logo2";
-	}		
-}
-
-.footer__titulo {
-	align-self: end;
-	height: auto;
-}
-
-.footer__texto {
-	align-self: start;
-}
-
-@media (min-width: 994px) {
-	.footer__titulo {
-		margin: 20px 20px 0px 20px;
+			"titulo contacto"
+			"redes newsletter";
 	}
-}
+	.footer__area1 {
+	align-self: center;
+	height: auto;
+	}
 
-.footer__titulo--lugar { grid-area: lugar1; }
-
-.footer__titulo--redes { grid-area: redes1; }
-
-.footer__titulo--logo { grid-area: logo1; }
-
-.footer__texto--lugar { grid-area: lugar2; }
-
-.footer__texto--redes { grid-area: redes2; }
-
-.footer__texto--logo { grid-area: logo2; }
-
-.copyright {
-	text-align: center;
-	width: 100%;
-	height: 7vh;
+	.footer__area2--newsletter div {
+		width: 25vw;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		form {
+			display: inherit;
+			flex-flow: inherit;
+			align-items: inherit;
+		}
+	}
+	.input_newsletter {
+		height: 25px;
+		width: 25vw;
+		margin: 5px 0px;
+	}
 }
