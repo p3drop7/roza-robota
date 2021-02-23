@@ -331,7 +331,8 @@ li {
 .titulo--h1, .titulo--p {
   height: auto;
   margin-bottom: 10px;
-  background-color: rgba(35, 194, 160, 0.6); }
+  background-color: rgba(35, 194, 160, 0.6);
+  padding: 0px 10px; }
 
 @media (min-width: 992px) {
   .titulo {
@@ -509,7 +510,7 @@ footer {
   padding-bottom: 40px; }
 
 .formContacto {
-  width: 90%;
+  width: 30%;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
   grid-auto-columns: auto auto;
@@ -518,6 +519,18 @@ footer {
   justify-content: center;
   align-items: center;
   justify-items: center; }
+
+@media (min-width: 992px) {
+  .formContacto {
+    width: 90%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-auto-columns: auto auto;
+    grid-template-areas: "formNombre formApellido" "formEmail formTelefono" "formMotivo formMotivo" "formTextArea formTextArea" "formNews formNews" "boton boton";
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; } }
 
 .formNombre {
   grid-area: formNombre; }
