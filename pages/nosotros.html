@@ -35,6 +35,120 @@
 
 </head>
 <body>
-	
+
+	<!-- Navegador Collapse para pantallas pequeñas -->
+	<nav class="navegador animate__animated animate__slideInDown">
+		<a href="#top" class="navegador__brand">
+			<img class="nav__logo" src="../assets/logoFondo.jpg" alt="Logo Roza Robota">
+		</a>
+		<button type="button" class="collapsible"><i class="fas fa-angle-double-down collapsible__icon"></i>
+		</button>	
+		<ul class="content">
+			<li><a href="../index.html">Inicio</a></li>
+        	<li><a href="nosotros.html" class="page-actual">Nosotros</a></li>
+        	<li><a href="comunidad.html">Comunidad</a></li>
+        	<li><a href="actividades.html">Actividades</a></li>
+        	<li><a href="contacto.html">Contacto</a></li>
+        	<li><a href="donar.html">Donar</a></li>
+        </ul>
+	</nav>	
+
+	<!-- Navegador para pantallas grandes -->
+	<nav class="navegador992px animate__animated animate__slideInDown">
+		<a href="#top" class="navegador992px__brand">
+			<img class="nav__logo" src="../assets/logoFondo.jpg" alt="Logo Roza Robota">
+		</a>
+		<ul class="navegador992px__lista">
+			<li class="navegador992px__btns"><a href="../index.html">Inicio</a></li>
+        	<li class="navegador992px__btns"><a href="../nosotros.html" class="page-actual__992px">Nosotros</a></li>
+        	<li class="navegador992px__btns"><a href="comunidad.html">Comunidad</a></li>
+        	<li class="navegador992px__btns"><a href="actividades.html">Actividades</a></li>
+        	<li class="navegador992px__btns"><a href="contacto.html">Contacto</a></li>
+        	<li class="navegador992px__btns"><a href="donar.html">Donar</a></li>
+        </ul>
+
+	</nav>
+
+	<main class="nosotros">
+		<div>
+			<h2>Nosotros</h2>
+			<p class="parrafo">La Casa de Cultura Roza Robota nace como una iniciativa de quienes habiendo pasado por Hashomer Hatzair buscan seguir activando. La propuesta es crear un puente entre las juventudes, dar lugar a nuevas experiencias socio-comunitarias, brindar espacios de reflexión relevantes a nuestro tiempo y contribuir a la creación de la cultura judía en Buenos Aires. Invitamos a todas y todos a sumarse a nuestras actividades y proyectos. ¡Traé tu idea! </p>
+			<img src="../assets/logoHashomer.jpg" alt="logo Hashomer">
+			<h2>Tnuat Noar Hashomer Hatzair</h2>
+			<p>Hashomer Hatzair es un movimiento juvenil educativo mundial con sedes en más de 20 países. Es un espacio judío humanista no formal para jóvenes de 7 a 18 años.
+			</p>
+		</div>
+		
+	</main>
+
+	<footer>
+
+			<div class="footer__titulo">
+				<h3>Casa de Cultura Roza Robota</h3>
+				<p class="parrafo parrafo--footer">Almagro. Buenos Aires, Argentina</p>
+			</div>
+
+			<div class="footer__grid">
+				<div class="footer__area footer__area--redes">
+				
+					<a href="https://www.facebook.com/CCRozaRobota/" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+
+					<a href="https://www.instagram.com/ccrozarobota/" target="_blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+
+				</div>
+			
+				<div class="footer__area footer__area--contacto">
+				
+					<h3>Contactanos:</h3>
+					<p class="parrafo parrafo--footer">ccrozarobota@hashomer-hatzair.org</p>
+					<div class="">
+						<i class="fab fa-whatsapp"></i>
+						<p class="parrafo parrafo--footer">11 5555 5555</p>
+					</div>
+
+				</div>
+
+				<div class="footer__area footer__area--newsletter">
+					<h3>Newsletter:</h3>
+					<form action="#" method="GET">
+						<input class="input_newsletter" type="email" name="email_Newsletter" placeholder="Ingresá tu email">
+						<input class="input_newsletter input_newsletter--boton" type="submit" value="Inscribirme">
+					</form>
+				</div>
+
+			</div>
+		</footer>
+
+		<div class="copyright">
+        	<p class="parrafo parrafo--copyright">© Pedro Palencia 2021</p>
+        	<p class="parrafo parrafo--copyright">All rights reserved</p>
+        	<div>
+        		<i class="fab fa-whatsapp"></i>
+        		<i class="fab fa-linkedin"></i>
+        	</div>
+    	</div>
+
+	<!-- JS del menu collapsible -->
+	<script type="text/javascript">
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+  		coll[i].addEventListener("click", function() {
+    		this.classList.toggle("active");
+    		var content = this.nextElementSibling;
+    		if (content.style.maxHeight){
+      		content.style.maxHeight = null;
+    		}			 else {
+      		content.style.maxHeight = content.scrollHeight + "px";
+    		} 
+  		});
+		}
+	</script>
+
 </body>
 </html>
