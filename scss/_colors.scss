@@ -9,7 +9,9 @@ $green4--opaco: rgba(35, 194, 160, 0.8);
 $gray: #222E3E;
 $gray2: #2c3e50;
 
-$blue: #1685E5;
+$blue: #147db5;
+$blue2: #1ca4ed;
+ /* #1ca4ed */ /* #1991d1 */
 
 $yellow: #ffc107;
 
@@ -44,7 +46,9 @@ $comunidades: (
 	}
 }
 
-footer { background-color: $gray2; }
+footer { background-color: $blue; }
+
+.footer__titulo { background-color: $blue2; }
 
 .input_newsletter--boton { 
 	background-color: $green4;

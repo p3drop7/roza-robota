@@ -1,22 +1,32 @@
 footer {
-	height: auto;
+	height: 100%;
 	width: 100vw;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.footer__titulo {
+	width: 100%;
+	height: auto;
+	padding: 20px      ; 
 	text-align: center;
+}
+
+.footer__grid {
+	width: 90%;
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	grid-template-columns: 80%;
+	grid-template-rows: 1fr 1fr auto;
+	grid-template-columns: 90%;
 	grid-template-areas: 
-		"titulo"
 		"redes"
 		"contacto"
 		"newsletter";
 	justify-content: center;
 	justify-items: center;	
-	padding-top: 30px;
 }
 
 .footer__area1 {
-	align-self: center;
 	height: auto;
 }
 
@@ -24,23 +34,50 @@ footer {
 	align-self: center;
 }
 
-.footer__area1--titulo { grid-area: titulo; }
+.footer__area2--redes { 
+	grid-area: redes;
+	width: 60%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+}
 
-.footer__area2--redes { grid-area: redes; }
-
-.footer__area1--contacto { grid-area: contacto; }
+.footer__area1--contacto { 
+	grid-area: contacto; 
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-items: center;
+	p {
+		padding: 7px 0px;
+	}
+	div{
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		p {
+			padding-left: 10px;
+		}
+	}
+}
 
 .footer__area2--newsletter { 
 	grid-area: newsletter; 
 	display: flex;
 	flex-flow: column;
-	align-items: center;
+	padding: 25px 0px;
+	width: 80%;
 }
 
 .copyright {
 	text-align: center;
 	width: 100%;
 	height: 7vh;
+}
+
+.fab {
+	font-size: 2.5em;
+	color: white;
 }
 
 @media (min-width: 994px) {
@@ -69,9 +106,15 @@ footer {
 			align-items: inherit;
 		}
 	}
+
 	.input_newsletter {
 		height: 25px;
 		width: 25vw;
 		margin: 5px 0px;
 	}
 }
+
+.input_newsletter--boton {
+		width: 103%;
+		margin: 7px 0px;
+	}
