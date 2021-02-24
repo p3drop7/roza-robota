@@ -13,6 +13,20 @@
 	}
 }
 
+.logo__hashomer {
+	height: auto;
+	width: 35%;
+	margin: 10px;
+}
+
+.logo__jotam {
+	@extend .logo__hashomer;
+}
+
+.logo__meretz {
+	@extend .logo__hashomer;
+}
+
 .comunidad__imagen {
 	width: 90%;
 	height: auto;

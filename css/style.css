@@ -24,6 +24,12 @@ input, select, textarea {
 .nosotros {
   background-color: white; }
 
+.comunidad-main {
+  background-color: #147db5; }
+
+.comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
+  background-color: white; }
+
 .contacto {
   background-color: white; }
 
@@ -98,8 +104,13 @@ h3 {
   margin-block-start: 0px !important;
   margin-block-end: 0px !important; }
 
-.h3--comunidad1 {
-  color: #222E3E; }
+.comunidad-grid__hashomer h3, .comunidad-grid__jotam h3, .comunidad-grid__meretz h3, .comunidad-grid__huerta h3 {
+  color: #147db5; }
+
+.comunidad-grid__hashomer a, .comunidad-grid__jotam a, .comunidad-grid__meretz a, .comunidad-grid__huerta a {
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1em; }
 
 .parrafo {
   font-family: "Open Sans Condensed", sans-serif;
@@ -115,7 +126,9 @@ h3 {
 
 .parrafo--comunidad {
   font-size: 1.5em;
-  color: #222E3E; }
+  color: #222E3E;
+  padding: 5px 15px;
+  margin-bottom: 10px; }
 
 .parrafo--donar {
   color: #222E3E;
@@ -203,6 +216,12 @@ input, select, textarea {
 .nosotros {
   background-color: white; }
 
+.comunidad-main {
+  background-color: #147db5; }
+
+.comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
+  background-color: white; }
+
 .contacto {
   background-color: white; }
 
@@ -249,6 +268,11 @@ footer {
     width: auto;
     height: 85%;
     padding-top: 10px; } }
+
+.logo__hashomer, .logo__jotam, .logo__meretz {
+  height: auto;
+  width: 35%;
+  margin: 10px; }
 
 .comunidad__imagen {
   width: 90%;
@@ -607,7 +631,7 @@ footer {
   padding-top: 5px; }
 
 /* COMUNIDAD */
-.comunidad--main {
+.comunidad-main {
   display: flex;
   flex-flow: column;
   align-items: center; }
@@ -624,32 +648,78 @@ footer {
   color: white;
   font-size: 2em; }
 
-.comunidad {
-  width: 90%;
+.comunidad-grid {
+  width: 100%;
   height: auto;
-  box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-items: center;
   text-align: center;
-  border-radius: 15px;
   margin: 20px;
-  padding: 10px; }
+  padding: 0px; }
 
-.comunidad--1 a {
-  display: inherit;
-  flex-flow: row;
-  justify-content: center; }
-
-@media (min-width: 994px) {
-  .comunidad {
+.comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
+  max-width: 90%;
+  padding: 0px 0px 15px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 30px;
+  box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
+  .comunidad-grid__hashomer div, .comunidad-grid__jotam div, .comunidad-grid__meretz div, .comunidad-grid__huerta div {
+    height: 230px;
     width: 100%;
-    height: auto;
-    border-radius: 0px;
+    padding: 0px;
     margin: 0px;
-    padding: 10px;
-    box-shadow: 20px 0px 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 20px 0 rgba(0, 0, 0, 0.5); } }
+    background-image: url("../assets/file_2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; }
+  .comunidad-grid__hashomer a, .comunidad-grid__jotam a, .comunidad-grid__meretz a, .comunidad-grid__huerta a {
+    padding: 7px 10px;
+    background-color: #1ca4ed;
+    text-decoration: none; }
+
+.comunidad-grid__jotam div {
+  background-image: url("../assets/file_8.jpeg"); }
+
+.comunidad-grid__meretz div {
+  background-image: url("../assets/file_3.jpeg"); }
+
+.comunidad-grid__huerta div {
+  background-image: url("../assets/file_10.jpeg"); }
+
+@media (min-width: 992px) {
+  .comunidad-grid {
+    width: 60vw;
+    height: auto;
+    display: grid !important;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hashomer jotam" "meretz huerta";
+    grid-row-gap: 30px; }
+  .comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
+    max-width: 75%;
+    height: 480px;
+    width: 300px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .comunidad-grid__hashomer div, .comunidad-grid__jotam div, .comunidad-grid__meretz div, .comunidad-grid__huerta div {
+      height: 180px; } }
+
+.comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
+  grid-area: hashomer; }
+
+.comunidad-grid__jotam {
+  grid-area: jotam; }
+
+.comunidad-grid__meretz {
+  grid-area: meretz; }
+
+.comunidad-grid__huerta {
+  grid-area: huerta; }
 
 .contacto {
   width: 100vw;
@@ -793,6 +863,12 @@ input, select, textarea {
   border-color: #23c29f; }
 
 .nosotros {
+  background-color: white; }
+
+.comunidad-main {
+  background-color: #147db5; }
+
+.comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
   background-color: white; }
 
 .contacto {

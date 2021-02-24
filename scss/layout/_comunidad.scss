@@ -1,5 +1,5 @@
 /* COMUNIDAD */
-.comunidad--main{
+.comunidad-main{
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -19,35 +19,92 @@
 	font-size: 2em;
 }
 
-.comunidad{
-	width: 90%;
+.comunidad-grid{
+	width: 100%;
 	height: auto;
-	box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	justify-items: center;
 	text-align: center;
-	border-radius: 15px;
 	margin: 20px;
-	padding: 10px;
+	padding: 0px;
 }
 
-.comunidad--1 {
-	a {
-		display: inherit;
-		flex-flow: row;
-		justify-content: center;
-	}
-}
-
-@media (min-width: 994px) {
-	.comunidad {
+.comunidad-grid__hashomer {
+	max-width: 90%;
+	padding: 0px 0px 15px 0px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 30px;
+	box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	div {
+		height: 230px;
 		width: 100%;
-		height: auto;
-		border-radius: 0px;
+		padding: 0px;
 		margin: 0px;
-		padding: 10px;
-		box-shadow: 20px 0px 0px 0px rgba(0, 0, 0, 0.5), 0px 0px 20px 0 rgba(0, 0, 0, 0.5);
+		background-image: url("../assets/file_2.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+	}	
+	a {
+		padding: 7px 10px;
+		background-color: $blue2;
+		text-decoration: none;
 	}
 }
+
+.comunidad-grid__jotam {
+	@extend .comunidad-grid__hashomer;
+	div {
+		background-image: url("../assets/file_8.jpeg");
+	}
+}
+
+.comunidad-grid__meretz {
+	@extend .comunidad-grid__hashomer;
+	div {
+		background-image: url("../assets/file_3.jpeg");
+	}
+}
+
+.comunidad-grid__huerta {
+	@extend .comunidad-grid__hashomer;
+	div {
+		background-image: url("../assets/file_10.jpeg");
+	}
+}
+
+@media (min-width: 992px) {
+	
+	.comunidad-grid {
+		width: 60vw;
+		height: auto;
+		display: grid !important;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"hashomer jotam"
+			"meretz huerta";
+		grid-row-gap: 30px;
+	}
+
+	.comunidad-grid__hashomer {
+		max-width: 75%;
+		height: 480px;
+		width: 300px;
+		border-radius: 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		div {
+				height: 180px;
+		}
+	}
+}
+
+.comunidad-grid__hashomer { grid-area: hashomer; }
+.comunidad-grid__jotam { grid-area: jotam; }
+.comunidad-grid__meretz { grid-area: meretz; }
+.comunidad-grid__huerta { grid-area: huerta; }
