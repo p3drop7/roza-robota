@@ -50,9 +50,14 @@ footer { background-color: $blue; }
 
 .footer__titulo { background-color: $blue2; }
 
+.input_newsletter {
+	border-color: $gray2;
+	font-size: 1.3em;
+}
+
 .input_newsletter--boton { 
-	background-color: $green4;
-	color: white;
+	background-color: $gray2;
+	border-color: $gray2;
 }
 
 .copyright { background-color: $gray; }
