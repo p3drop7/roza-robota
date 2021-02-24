@@ -29,8 +29,8 @@ main {
 	width: 100vw;
 }
 
-/* NOSOTROS */
-.nosotros {
+/* Main index */
+.index-nosotros {
 	height: auto;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -41,7 +41,7 @@ main {
 	width: 70vw;
 }
 
-.seccion__titulo{
+.index-nosotros__titulo{
 	padding-bottom: 40px;
 	left: 20%;
 	display: flex;
@@ -49,11 +49,11 @@ main {
 	justify-content: center;
 	align-items: center;
 }
-.h2--nosotros {
+.h2--index-nosotros {
 	position: relative;
     right: 163%;
 }
 
-.nosotros__parrafo {
+.index-nosotros__parrafo {
 	width: 80%;
 }

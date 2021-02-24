@@ -11,13 +11,14 @@ a {
 
 h1 {
 	font-family: $openSans;
-	font-size: 3.5em;
+	font-size: 2.3em;
 	font-weight: bolder;
+	background-color: rgba(35, 194, 160, 0.6);
 }
 
 .titulo--p {
-	font-size: 3em;
-	font-family: $openSans;
+	@extend h1;
+	font-size: 1.8em;
 }
 
 h2 {
@@ -27,7 +28,7 @@ h2 {
 	color: white;
 }
 
-.h2--nosotros {
+.h2--index-nosotros {
 	color: $green4;
 }
 
@@ -47,6 +48,8 @@ h3 {
 	font-family: $lato;
 	font-size: 1.7em;
 	color: white;
+	margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
 }
 
 .h3--comunidad1 {
@@ -131,6 +134,9 @@ input {
 }
 
 @media (min-width: 992px) {
+	h1{
+		font-size: 3.5em;
+	}
 	.comunidad h3 {
 		font-size: 1.6em;
 	}
