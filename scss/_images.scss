@@ -19,6 +19,27 @@
 	margin: 10px;
 }
 
+.grid-nosotros__3 {
+	width: 80vw;
+}
+
+.grid-nosotros__5 {
+	width: 80vw;
+}
+
+@media (min-width: 992px) {
+	
+	.grid-nosotros__3 {
+		width: 100%;
+		height: auto;
+	}
+
+	.grid-nosotros__5 {
+		width: 100%;
+		height: auto;
+	}
+}
+
 .logo__jotam {
 	@extend .logo__hashomer;
 }

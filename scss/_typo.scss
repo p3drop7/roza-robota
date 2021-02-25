@@ -32,6 +32,10 @@ h2 {
 	color: $green4;
 }
 
+.h2--nosotros {
+	background-color: $green4--opaco;
+}
+
 .h2--contacto {
 	color: $gray;
 }
@@ -62,6 +66,10 @@ h3 {
 	font-size: 1em;
 }
 
+.nosotros--titulo-grid {
+	color: $gray;
+}
+
 .parrafo { 
 	font-family: $openSans; 
 	text-align: center;
@@ -73,7 +81,7 @@ h3 {
 	color: $green4;
 	background-color: white;
 	font-family: $openSans;
-	font-size: 1.6em;
+	font-size: 1.7rem;
 }
 
 .parrafo--comunidad {

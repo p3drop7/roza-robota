@@ -1,0 +1,104 @@
+.nosotros {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%
+}
+
+.nosotros__titulo {
+	height: 90vh;
+	width: 100%;
+	background-image: url(../assets/file_20.jpeg);
+	background-size: cover;
+	background-position: -200px 0px;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+	.nosotros__titulo {
+	background-position: 0px -260px;
+	}
+}
+
+.nosotros__contenido {
+	height: auto;
+	width: 77vw;
+	margin-top: 40px;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-columns: auto;
+	grid-template-areas:
+		"parrafo"
+		"fotoRR"
+		"parrafoRR"
+		"logoHashomer"
+		"parrafoHashomer";
+	grid-row-gap: 30px;
+	text-align: center;
+}
+
+.grid-nosotros__1 { 
+	grid-area: parrafo;
+}
+
+.grid-nosotros__2 {
+	grid-area: fotos;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+@media (max-width: 992px) {
+	display: none;
+}
+
+
+.grid-nosotros__3 { grid-area: fotoRR; }
+
+.grid-nosotros__4 { grid-area: parrafoRR; }
+
+.grid-nosotros__5 { grid-area: logoHashomer; }
+
+.grid-nosotros__6 { grid-area: parrafoHashomer; }
+
+.grid-nosotros__foto {
+	height: auto;
+	width: 15em;
+	overflow: hidden;
+	background-size: cover;
+	background-size: cover;
+	background-position: -20px 0px;
+	background-repeat: no-repeat;
+	box-shadow: 5px 5px 15px gray;
+}
+
+.grid-nosotros__foto--1 { 
+	background-image: url("../assets/file_15.jpeg");
+}
+
+.grid-nosotros__foto--2 { 
+	background-image: url("../assets/file_16.jpeg");
+}
+
+.grid-nosotros__foto--3 { 
+	background-image: url("../assets/file_17.jpeg");
+}
+
+@media (min-width: 992px) {
+	.nosotros__contenido {
+		height: auto;
+		width: 70vw;
+		margin-top: 40px;
+		display: grid;
+		grid-template-rows: auto 250px 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			"parrafo parrafo parrafo"
+			"fotos fotos fotos"
+			"fotoRR parrafoRR parrafoRR"
+			"logoHashomer parrafoHashomer parrafoHashomer";
+		grid-row-gap: 60px;
+		grid-column-gap: 20px;	
+	}
+}
