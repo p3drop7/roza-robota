@@ -27,6 +27,9 @@ input, select, textarea {
 .comunidad-main {
   background-color: #147db5; }
 
+.contacto___titulo {
+  background-color: rgba(35, 194, 160, 0.8); }
+
 .comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
   background-color: white; }
 
@@ -35,6 +38,10 @@ input, select, textarea {
 
 .boton__boton {
   background-color: #23c29f; }
+
+.boton-donar {
+  background-color: #23c29f;
+  color: white; }
 
 .proyecto--main {
   background-color: #1685E5; }
@@ -92,7 +99,7 @@ h2 {
   background-color: rgba(35, 194, 160, 0.8); }
 
 .h2--contacto {
-  color: #222E3E; }
+  color: white; }
 
 .comunidad h2 {
   color: #222E3E; }
@@ -198,6 +205,9 @@ input, select, textarea {
   input, select, textarea {
     font-size: .7em; } }
 
+.h2--donar {
+  color: #147db5; }
+
 /* rgb (35, 194, 160) */
 /* #1ca4ed */
 /* #1991d1 */
@@ -225,6 +235,9 @@ input, select, textarea {
 .comunidad-main {
   background-color: #147db5; }
 
+.contacto___titulo {
+  background-color: rgba(35, 194, 160, 0.8); }
+
 .comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
   background-color: white; }
 
@@ -233,6 +246,10 @@ input, select, textarea {
 
 .boton__boton {
   background-color: #23c29f; }
+
+.boton-donar {
+  background-color: #23c29f;
+  color: white; }
 
 .proyecto--main {
   background-color: #1685E5; }
@@ -828,10 +845,20 @@ footer {
 
 .contacto {
   width: 100vw;
-  padding-top: 30px;
   display: flex;
   flex-flow: column;
   align-items: center; }
+
+.contacto___titulo {
+  margin-bottom: 50px;
+  padding: 20px 0px;
+  width: 100%;
+  text-align: center; }
+
+.fa-envelope {
+  font-size: 2.5em;
+  color: white;
+  margin-top: 10px; }
 
 .formularioDeContacto {
   width: 90%;
@@ -929,7 +956,8 @@ input, select, textarea {
   border-radius: 5px; }
 
 input:focus, select:focus, textarea:focus {
-  background-color: rgba(35, 194, 160, 0.3); }
+  background-color: rgba(35, 194, 160, 0.3);
+  border-color: green; }
 
 .input--one-line {
   border-width: 0px 0px 2px 0px;
@@ -973,6 +1001,9 @@ input, select, textarea {
 .comunidad-main {
   background-color: #147db5; }
 
+.contacto___titulo {
+  background-color: rgba(35, 194, 160, 0.8); }
+
 .comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
   background-color: white; }
 
@@ -981,6 +1012,10 @@ input, select, textarea {
 
 .boton__boton {
   background-color: #23c29f; }
+
+.boton-donar {
+  background-color: #23c29f;
+  color: white; }
 
 .proyecto--main {
   background-color: #1685E5; }
@@ -1015,7 +1050,13 @@ footer {
   height: auto;
   width: 100%;
   padding-bottom: 30px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  text-align: center; }
+
+.fa-hands-helping {
+  font-size: 2.5em;
+  color: #147db5;
+  margin-top: 10px; }
 
 .formularioDonar {
   padding-bottom: 20px;
@@ -1023,14 +1064,15 @@ footer {
   justify-content: center; }
 
 .formDonar {
-  width: 373px;
+  width: 90vw;
   display: grid;
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: auto auto;
   grid-template-areas: "donarNombre donarApellido" "donarEmail donarEmail" "donarAnonimo donarAnonimo" "donarTextArea donarTextArea" "donarBotones donarBotones";
   justify-items: center;
   align-items: center;
-  grid-row-gap: 10px; }
+  grid-row-gap: 10px;
+  grid-column-gap: 20px; }
 
 .donarNombre {
   grid-area: donarNombre; }
@@ -1039,7 +1081,8 @@ footer {
   grid-area: donarApellido; }
 
 .donarEmail {
-  grid-area: donarEmail; }
+  grid-area: donarEmail;
+  width: 100%; }
 
 .donarAnonimo {
   grid-area: donarAnonimo; }
@@ -1054,6 +1097,26 @@ footer {
   height: 30px;
   font-size: 0.8em;
   background-color: #47edc9; }
+
+.input-donar {
+  border-width: 0px 0px 2px 0px;
+  border-radius: 0px; }
+
+.checkbox-donar {
+  height: 20px; }
+
+.textarea-donar {
+  width: 295px; }
+
+.boton-donar {
+  border-radius: 10px;
+  margin-bottom: 50px;
+  height: 40px;
+  width: 300px; }
+
+@media (min-width: 992px) {
+  .formDonar {
+    width: auto; } }
 
 * {
   margin: 0px;

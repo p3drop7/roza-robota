@@ -73,42 +73,43 @@
 		<div class="donar_titulo">
 			<h2 class="animate__animated animate__fadeInDown h2--donar">Donar</h2>
 			<p class="parrafo--donar">¡Apoyanos con tu donación!</p>
+			<i class="fas fa-hands-helping"></i>
 		</div>
 
 		<div class="formularioDonar">
 
 				<form action="#" method="GET" class="formDonar">
 
-					<dir class="donarNombre">
+					<div class="donarNombre">
 						<label for="nombre"> Nombre:<br>
-						<input type="text" name="nombre" placeholder="Ingresá tu nombre">
+						<input class="input-donar" type="text" name="nombre" placeholder="Ingresá tu nombre">
 						</label>
-					</dir>	
+					</div>	
 
 					<div class="donarApellido">
 						<label for="apellido"> Apellido:<br>
-						<input type="text" name="apellido" placeholder="Ingresá tu apellido">
+						<input class="input-donar" type="text" name="apellido" placeholder="Ingresá tu apellido">
 						</label>
 					</div>
 				
 					<div class="donarEmail">
 						<label for="email"> Email:<br>
-						<input type="email" name="email" placeholder="Ingresá tu email" required>
+						<input class="input-donar" type="email" name="email" placeholder="Ingresá tu email" required>
 						</label>
 					</div>
 					
 					<div class="donarAnonimo">
-						<label for="anonimo"> Deseo que mi donación sea anónima
-						<input type="checkbox" name="anonimo" value="1">
+						<label for="anonimo"> Donación anónima:
+						<input class="checkbox-donar" type="checkbox" name="anonimo" value="1">
 						</label>
 					</div>
 					
 					<div class="donarTextArea">
-						<textarea rows="8" cols="40" placeholder="Comentarios"></textarea>
+						<textarea class="textarea-donar" rows="8" cols="40" placeholder="Comentarios"></textarea>
 					</div>
 					
 					<div class="donarBotones">
-						<input type="submit" value="Enviar" class="botonEnviar">
+						<input class="boton-donar" type="submit" value="Enviar" class="botonEnviar">
 					</div>
 				
 				</form>	
