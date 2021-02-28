@@ -1,0 +1,92 @@
+.main-actividades {
+	height: auto;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+
+.actividad {
+	width: 90vw;
+	height: auto;
+	margin: 30px 0px;
+	overflow: hidden;
+	text-align: center;
+	h3 {
+		padding: 10px 0px;
+	}
+}
+
+.section__foto {
+	height: 250px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section__foto--1 { background-image: url("../assets/pesaj.jpg");}
+.section__foto--2 { background-image: url("../assets/roshhashana.jpeg");}
+.section__foto--3 { background-image: url("../assets/iomkipur.jpg"); }
+.section__foto--4 { background-image: url("../assets/rabin.jpg");}
+
+@media (min-width: 992px) {
+.actividad {
+	height: auto;
+	width: 80vw;
+	display: grid;
+}
+
+.actividad--left {
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+		"actividades-foto actividades-titulo"
+		"actividades-foto actividades-parrafo";
+}
+
+.actividad--right {
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas:
+		"actividades-titulo actividades-foto"
+		"actividades-parrafo actividades-foto";
+} 
+
+.actividad-1 div { grid-area: actividades-foto; }
+.actividad-1 h3 { grid-area: actividades-titulo; }
+.actividad-1 p { grid-area: actividades-parrafo; }
+
+.actividad-2 div { grid-area: actividades-foto; }
+.actividad-2 h3 { grid-area: actividades-titulo; }
+.actividad-2 p { grid-area: actividades-parrafo; }
+
+.actividad-3 div { grid-area: actividades-foto; }
+.actividad-3 h3 { grid-area: actividades-titulo; }
+.actividad-3 p { grid-area: actividades-parrafo; }
+
+.actividad-4 div { grid-area: actividades-foto; }
+.actividad-4 h3 { grid-area: actividades-titulo; }
+.actividad-4 p { grid-area: actividades-parrafo; }
+
+}
+
+.actividad h3 {
+	color: black;
+}
+
+hr { width: 90%; }
+/*
+.section__titulo
+
+.section__titulo--1
+.section__titulo--2
+.section__titulo--3
+.section__titulo--4
+
+.section__parrafo
+
+.section__parrafo--1
+.section__parrafo--2
+.section__parrafo--3
+.section__parrafo--4 */
