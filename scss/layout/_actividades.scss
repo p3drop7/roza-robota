@@ -31,43 +31,50 @@
 .section__foto--4 { background-image: url("../assets/rabin.jpg");}
 
 @media (min-width: 992px) {
-.actividad {
-	height: auto;
-	width: 80vw;
-	display: grid;
-}
+	.actividad {
+		height: auto;
+		width: 80vw;
+		display: grid;
+		margin: 20px 0px;
+	}
 
-.actividad--left {
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 2fr;
-	grid-template-areas:
-		"actividades-foto actividades-titulo"
-		"actividades-foto actividades-parrafo";
-}
+	.section__foto {
+		height: 240px;
+		width: 100%;
+		background-position: center;
+	}
 
-.actividad--right {
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 2fr 1fr;
-	grid-template-areas:
-		"actividades-titulo actividades-foto"
-		"actividades-parrafo actividades-foto";
-} 
+	.actividad--left {
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 2fr;
+		grid-template-areas:
+			"actividades-foto actividades-titulo"
+			"actividades-foto actividades-parrafo";
+	}
 
-.actividad-1 div { grid-area: actividades-foto; }
-.actividad-1 h3 { grid-area: actividades-titulo; }
-.actividad-1 p { grid-area: actividades-parrafo; }
+	.actividad--right {
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			"actividades-titulo actividades-foto"
+			"actividades-parrafo actividades-foto";
+	} 
 
-.actividad-2 div { grid-area: actividades-foto; }
-.actividad-2 h3 { grid-area: actividades-titulo; }
-.actividad-2 p { grid-area: actividades-parrafo; }
+	.actividad-1 div { grid-area: actividades-foto; }
+	.actividad-1 h3 { grid-area: actividades-titulo; }
+	.actividad-1 p { grid-area: actividades-parrafo; }
 
-.actividad-3 div { grid-area: actividades-foto; }
-.actividad-3 h3 { grid-area: actividades-titulo; }
-.actividad-3 p { grid-area: actividades-parrafo; }
+	.actividad-2 div { grid-area: actividades-foto; }
+	.actividad-2 h3 { grid-area: actividades-titulo; }
+	.actividad-2 p { grid-area: actividades-parrafo; }
 
-.actividad-4 div { grid-area: actividades-foto; }
-.actividad-4 h3 { grid-area: actividades-titulo; }
-.actividad-4 p { grid-area: actividades-parrafo; }
+	.actividad-3 div { grid-area: actividades-foto; }
+	.actividad-3 h3 { grid-area: actividades-titulo; }
+	.actividad-3 p { grid-area: actividades-parrafo; }
+
+	.actividad-4 div { grid-area: actividades-foto; }
+	.actividad-4 h3 { grid-area: actividades-titulo; }
+	.actividad-4 p { grid-area: actividades-parrafo; }
 
 }
 
@@ -76,17 +83,3 @@
 }
 
 hr { width: 90%; }
-/*
-.section__titulo
-
-.section__titulo--1
-.section__titulo--2
-.section__titulo--3
-.section__titulo--4
-
-.section__parrafo
-
-.section__parrafo--1
-.section__parrafo--2
-.section__parrafo--3
-.section__parrafo--4 */

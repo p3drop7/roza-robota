@@ -886,7 +886,12 @@ footer {
   .actividad {
     height: auto;
     width: 80vw;
-    display: grid; }
+    display: grid;
+    margin: 20px 0px; }
+  .section__foto {
+    height: 240px;
+    width: 100%;
+    background-position: center; }
   .actividad--left {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 2fr;
@@ -926,20 +931,6 @@ footer {
 hr {
   width: 90%; }
 
-/*
-.section__titulo
-
-.section__titulo--1
-.section__titulo--2
-.section__titulo--3
-.section__titulo--4
-
-.section__parrafo
-
-.section__parrafo--1
-.section__parrafo--2
-.section__parrafo--3
-.section__parrafo--4 */
 .contacto {
   width: 100vw;
   display: flex;
