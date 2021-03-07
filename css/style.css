@@ -92,6 +92,11 @@ h2 {
   font-size: 3rem;
   color: white; }
 
+.index-nosotros a {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 1.3em; }
+
 .h2--index-nosotros {
   color: #23c29f; }
 
@@ -135,7 +140,7 @@ h3 {
   color: #23c29f;
   background-color: white;
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 1.7rem; }
+  font-size: 1.5em; }
 
 .parrafo--comunidad {
   font-size: 1.5em;
@@ -206,6 +211,8 @@ input, select, textarea {
     font-size: 1.3em; }
   .parrafo--footer {
     font-size: 1.5em; }
+  .parrafo--nosotros {
+    font-size: 2rem; }
   input, select, textarea {
     font-size: .7em; } }
 
@@ -1242,6 +1249,12 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center; }
+  .index-nosotros a {
+    margin-top: 20px;
+    padding: 8px 18px;
+    background-color: #1ca4ed;
+    text-decoration: none;
+    border-radius: 5px; }
 
 .h2--index-nosotros {
   padding-bottom: 20px; }
