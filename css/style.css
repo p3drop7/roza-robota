@@ -27,6 +27,9 @@ input, select, textarea {
 .seccion__titulo--comunidad {
   background-color: rgba(35, 194, 160, 0.8); }
 
+.seccion__titulo--actividades {
+  background-color: rgba(35, 194, 160, 0.8); }
+
 .comunidad-main {
   background-color: #147db5; }
 
@@ -247,6 +250,9 @@ input, select, textarea {
   background-color: white; }
 
 .seccion__titulo--comunidad {
+  background-color: rgba(35, 194, 160, 0.8); }
+
+.seccion__titulo--actividades {
   background-color: rgba(35, 194, 160, 0.8); }
 
 .comunidad-main {
@@ -885,6 +891,11 @@ footer {
   align-items: center;
   justify-items: center; }
 
+.seccion__titulo--actividades {
+  padding: 5px 0px;
+  margin-bottom: 40px;
+  width: 100%; }
+
 .actividad {
   width: 90vw;
   height: auto;
@@ -919,42 +930,36 @@ footer {
     display: grid;
     margin: 20px 0px; }
   .section__foto {
-    height: 100%;
-    /* 240px */
-    width: 100%;
+    height: 300px;
+    width: auto;
     background-position: center; }
+  .section__texto {
+    align-self: center;
+    margin: auto 20px; }
   .actividad--left {
-    grid-template-rows: 30vh 1fr;
+    grid-template-rows: auto auto;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: "actividades-foto actividades-titulo" "actividades-foto actividades-parrafo"; }
+    grid-template-areas: "actividades-foto actividades-texto" "actividades-foto actividades-texto"; }
   .actividad--right {
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto auto;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "actividades-titulo actividades-foto" "actividades-parrafo actividades-foto"; }
-  .actividad-1 div {
+    grid-template-areas: "actividades-texto actividades-foto" "actividades-texto actividades-foto"; }
+  .section__foto--1 {
     grid-area: actividades-foto; }
-  .actividad-1 h3 {
-    grid-area: actividades-titulo; }
-  .actividad-1 p {
-    grid-area: actividades-parrafo; }
-  .actividad-2 div {
+  .section__texto--1 {
+    grid-area: actividades-texto; }
+  .section__foto--2 {
     grid-area: actividades-foto; }
-  .actividad-2 h3 {
-    grid-area: actividades-titulo; }
-  .actividad-2 p {
-    grid-area: actividades-parrafo; }
-  .actividad-3 div {
+  .section__texto--2 {
+    grid-area: actividades-texto; }
+  .section__foto--3 {
     grid-area: actividades-foto; }
-  .actividad-3 h3 {
-    grid-area: actividades-titulo; }
-  .actividad-3 p {
-    grid-area: actividades-parrafo; }
-  .actividad-4 div {
+  .section__texto--3 {
+    grid-area: actividades-texto; }
+  .section__foto--4 {
     grid-area: actividades-foto; }
-  .actividad-4 h3 {
-    grid-area: actividades-titulo; }
-  .actividad-4 p {
-    grid-area: actividades-parrafo; } }
+  .section__texto--4 {
+    grid-area: actividades-texto; } }
 
 .actividad h3 {
   color: black; }
@@ -1118,6 +1123,9 @@ input, select, textarea {
   background-color: white; }
 
 .seccion__titulo--comunidad {
+  background-color: rgba(35, 194, 160, 0.8); }
+
+.seccion__titulo--actividades {
   background-color: rgba(35, 194, 160, 0.8); }
 
 .comunidad-main {
