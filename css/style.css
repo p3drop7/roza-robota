@@ -919,15 +919,16 @@ footer {
     display: grid;
     margin: 20px 0px; }
   .section__foto {
-    height: 240px;
+    height: 100%;
+    /* 240px */
     width: 100%;
     background-position: center; }
   .actividad--left {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 30vh 1fr;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "actividades-foto actividades-titulo" "actividades-foto actividades-parrafo"; }
   .actividad--right {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "actividades-titulo actividades-foto" "actividades-parrafo actividades-foto"; }
   .actividad-1 div {
