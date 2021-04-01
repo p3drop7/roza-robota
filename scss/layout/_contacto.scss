@@ -6,7 +6,6 @@
 }
 
 .contacto___titulo {
-	margin-bottom: 50px;
 	padding: 20px 0px;
 	width: 100%;
 	text-align: center;
@@ -19,14 +18,15 @@
 }
 
 .formularioDeContacto {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	padding-bottom: 40px;
 }
 
 .formContacto {
-	width: 100%;
+	width: 90%;
+	margin-top: 40px;
 	display: grid;
 	grid-template-rows: auto auto auto auto auto auto auto auto;
 	grid-auto-columns: 100%;
@@ -43,27 +43,6 @@
 	justify-content: center;
 	align-items: center;
 	justify-items: center;
-}
-
-@media (min-width: 992px) {
-	.formContacto {
-		width: 100%;
-		display: grid;
-		grid-template-rows: auto auto auto auto auto auto;
-		grid-auto-columns: auto auto;
-		grid-template-areas: 
-			"formNombre formApellido"
-			"formEmail formTelefono"
-			"formMotivo formMotivo"
-			"formTextArea formTextArea"
-			"formNews formNews"
-			"boton boton";
-		grid-row-gap: 10px;
-		grid-column-gap: 30px;
-		justify-content: center;
-		align-items: center;
-		justify-items: center;
-	}
 }
 
 .formNombre { 
@@ -170,6 +149,29 @@ textarea {
 	height: 150px;
 }
 
-.formularioDeContacto form {
-	background-color: rgba(255, 255, 255, 0.8);
+@media (min-width: 992px) {
+	.formContacto {
+		width: 100%;
+		display: grid;
+		grid-template-rows: auto auto auto auto auto auto;
+		grid-auto-columns: auto auto;
+		grid-template-areas: 
+			"formNombre formApellido"
+			"formEmail formTelefono"
+			"formMotivo formMotivo"
+			"formTextArea formTextArea"
+			"formNews formNews"
+			"boton boton";
+		grid-row-gap: 10px;
+		grid-column-gap: 30px;
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
+	}
+	.formularioDeContacto form {
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 20px 20px;
+		width: auto;
+		border-radius: 10px;
+	}
 }

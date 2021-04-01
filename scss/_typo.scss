@@ -144,6 +144,12 @@ h3 {
 	font-size: 2em;
 }
 
+@media (max-width: 992px) {
+	.formContacto {
+		color: white;
+	}
+}
+
 input {
 	font-family: $lato;
 	font-size: 0.6em;

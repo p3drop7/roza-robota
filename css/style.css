@@ -192,6 +192,10 @@ h3 {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 2em; }
 
+@media (max-width: 992px) {
+  .formContacto {
+    color: white; } }
+
 input, select, textarea {
   font-family: "Lato", sans-serif;
   font-size: 0.6em; }
@@ -315,8 +319,11 @@ footer {
     height: 85%;
     padding-top: 10px; } }
 
-.contacto {
-  background-image: url("../assets/fondo_contacto.jpg"); }
+.formularioDeContacto {
+  background-image: url("../assets/fondo_contacto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .grid-nosotros__3 {
   background-image: url("../assets/fotoRR.jpg");
@@ -983,7 +990,6 @@ hr {
   align-items: center; }
 
 .contacto___titulo {
-  margin-bottom: 50px;
   padding: 20px 0px;
   width: 100%;
   text-align: center; }
@@ -994,13 +1000,14 @@ hr {
   margin-top: 10px; }
 
 .formularioDeContacto {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-bottom: 40px; }
 
 .formContacto {
-  width: 100%;
+  width: 90%;
+  margin-top: 40px;
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto auto;
   grid-auto-columns: 100%;
@@ -1009,19 +1016,6 @@ hr {
   justify-content: center;
   align-items: center;
   justify-items: center; }
-
-@media (min-width: 992px) {
-  .formContacto {
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-auto-columns: auto auto;
-    grid-template-areas: "formNombre formApellido" "formEmail formTelefono" "formMotivo formMotivo" "formTextArea formTextArea" "formNews formNews" "boton boton";
-    grid-row-gap: 10px;
-    grid-column-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    justify-items: center; } }
 
 .formNombre {
   grid-area: formNombre;
@@ -1107,8 +1101,23 @@ select {
 textarea {
   height: 150px; }
 
-.formularioDeContacto form {
-  background-color: rgba(255, 255, 255, 0.8); }
+@media (min-width: 992px) {
+  .formContacto {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-auto-columns: auto auto;
+    grid-template-areas: "formNombre formApellido" "formEmail formTelefono" "formMotivo formMotivo" "formTextArea formTextArea" "formNews formNews" "boton boton";
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; }
+  .formularioDeContacto form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 20px;
+    width: auto;
+    border-radius: 10px; } }
 
 /* rgb (35, 194, 160) */
 /* #1ca4ed */

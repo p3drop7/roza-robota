@@ -13,8 +13,11 @@
 	}
 }
 
-.contacto {
-	background-image: url("../assets/fondo_contacto.jpg");
+.formularioDeContacto {
+	background-image: url("../assets/fondo_contacto.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .grid-nosotros__3 {
