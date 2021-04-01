@@ -84,23 +84,38 @@
 			"hashomer jotam"
 			"meretz huerta";
 		grid-row-gap: 30px;
+		a {
+			justify-self: end;
+		}
 	}
 
 	.comunidad-grid__hashomer {
 		max-width: 75%;
 		height: 480px;
 		width: 300px;
-		border-radius: 0px;
+		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		div {
-				height: 180px;
+			height: 180px;
+		}
+	}
+
+	.comunidad-grid__meretz {
+		a {
+			margin-top: 40px;
+		}
+		img {
+			margin-bottom: 30px;
 		}
 	}
 }
 
-.comunidad-grid__hashomer { grid-area: hashomer; }
-.comunidad-grid__jotam { grid-area: jotam; }
+.comunidad-grid__hashomer { grid-area: hashomer;}
+
+.comunidad-grid__jotam { grid-area: jotam;}
+
 .comunidad-grid__meretz { grid-area: meretz; }
+
 .comunidad-grid__huerta { grid-area: huerta; }

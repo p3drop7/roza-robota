@@ -13,6 +13,10 @@
 	}
 }
 
+.contacto {
+	background-image: url("../assets/fondo_contacto.jpg");
+}
+
 .grid-nosotros__3 {
 	background-image: url("../assets/fotoRR.jpg");
 	background-repeat: no-repeat;
@@ -59,6 +63,10 @@
 }
 
 .logo__meretz {
+	@extend .logo__hashomer;
+}
+
+.logo__raicesUrbanas {
 	@extend .logo__hashomer;
 }
 

@@ -315,6 +315,9 @@ footer {
     height: 85%;
     padding-top: 10px; } }
 
+.contacto {
+  background-image: url("../assets/fondo_contacto.jpg"); }
+
 .grid-nosotros__3 {
   background-image: url("../assets/fotoRR.jpg");
   background-repeat: no-repeat;
@@ -345,7 +348,7 @@ footer {
   background-position: center;
   background-size: cover; }
 
-.logo__hashomer, .logo__jotam, .logo__meretz {
+.logo__hashomer, .logo__jotam, .logo__meretz, .logo__raicesUrbanas {
   height: auto;
   width: 35%;
   margin: 10px; }
@@ -860,16 +863,22 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "hashomer jotam" "meretz huerta";
     grid-row-gap: 30px; }
+    .comunidad-grid a {
+      justify-self: end; }
   .comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
     max-width: 75%;
     height: 480px;
     width: 300px;
-    border-radius: 0px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .comunidad-grid__hashomer div, .comunidad-grid__jotam div, .comunidad-grid__meretz div, .comunidad-grid__huerta div {
-      height: 180px; } }
+      height: 180px; }
+  .comunidad-grid__meretz a {
+    margin-top: 40px; }
+  .comunidad-grid__meretz img {
+    margin-bottom: 30px; } }
 
 .comunidad-grid__hashomer, .comunidad-grid__jotam, .comunidad-grid__meretz, .comunidad-grid__huerta {
   grid-area: hashomer; }
@@ -1097,6 +1106,9 @@ select {
 
 textarea {
   height: 150px; }
+
+.formularioDeContacto form {
+  background-color: rgba(255, 255, 255, 0.8); }
 
 /* rgb (35, 194, 160) */
 /* #1ca4ed */
