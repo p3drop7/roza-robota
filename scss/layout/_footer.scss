@@ -15,28 +15,20 @@ footer {
 
 .footer__grid {
 	width: 90%;
+	padding-top: 30px;
 	display: grid;
-	grid-template-rows: 1fr 1fr auto;
+	grid-template-rows: auto auto;
 	grid-template-columns: 90%;
-	grid-template-areas: 
-		"redes"
+	grid-template-areas:
 		"contacto"
 		"newsletter";
 	justify-content: center;
-	justify-items: center;	
+	justify-items: center;
 }
 
 .footer__area {
 	height: auto;
 	align-self: center;
-}
-
-.footer__area--redes { 
-	grid-area: redes;
-	width: 60%;
-	display: flex;
-	flex-flow: row;
-	justify-content: center;
 }
 
 .footer__area--contacto { 
@@ -56,6 +48,16 @@ footer {
 			padding-left: 10px;
 		}
 	}
+}
+
+.fa-whatsapp {
+	font-size: 0.7em;
+}
+
+.footer__area--redes {
+	justify-self: center;
+	padding: 20px 0px;
+	font-size: 0.8em;
 }
 
 .footer__area--newsletter { 
@@ -96,10 +98,9 @@ footer {
 @media (min-width: 994px) {
 	
 	.footer__grid {
-		grid-template-rows: 1fr 2fr;
+		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
-		grid-template-areas: 
-			"redes redes"
+		grid-template-areas:
 			"contacto newsletter";
 	}
 
@@ -114,10 +115,6 @@ footer {
 			align-items: inherit;
 		}
 	}	
-
-	.footer__area--redes {
-		padding: 15px 0px;
-	}
 }
 
 .copyright div i {
