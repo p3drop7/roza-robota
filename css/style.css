@@ -24,7 +24,7 @@ input, select, textarea {
 .nosotros {
   background-color: white; }
 
-.seccion__titulo--comunidad {
+.comunidad__titulo {
   background-color: rgba(35, 194, 160, 0.8); }
 
 .seccion__titulo--actividades {
@@ -253,7 +253,7 @@ input, select, textarea {
 .nosotros {
   background-color: white; }
 
-.seccion__titulo--comunidad {
+.comunidad__titulo {
   background-color: rgba(35, 194, 160, 0.8); }
 
 .seccion__titulo--actividades {
@@ -360,15 +360,11 @@ footer {
   width: 35%;
   margin: 10px; }
 
-.comunidad__imagen {
-  width: 90%;
-  height: auto;
-  padding: 20px 10px;
-  border-radius: 20px; }
-
-@media (min-width: 994px) {
-  .comunidad__imagen {
-    width: 60%; } }
+.seccion__titulo--comunidad {
+  background-image: url("../assets/fondo_comunidad.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; }
 
 /* TITULO DEL NAV */
 .h1__animation {
@@ -813,8 +809,8 @@ footer {
   align-items: center; }
 
 .seccion__titulo--comunidad {
-  padding: 5px 0px;
-  width: 100%; }
+  width: 100%;
+  height: 90vh; }
 
 .icono {
   color: white;
@@ -1144,7 +1140,7 @@ input, select, textarea {
 .nosotros {
   background-color: white; }
 
-.seccion__titulo--comunidad {
+.comunidad__titulo {
   background-color: rgba(35, 194, 160, 0.8); }
 
 .seccion__titulo--actividades {

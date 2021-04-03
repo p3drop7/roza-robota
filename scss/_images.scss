@@ -73,15 +73,9 @@
 	@extend .logo__hashomer;
 }
 
-.comunidad__imagen {
-	width: 90%;
-	height: auto;
-	padding: 20px 10px;
-	border-radius: 20px;
-} 
-
-@media (min-width: 994px) {
-	.comunidad__imagen {
-		width: 60%;
-	}
+.seccion__titulo--comunidad {
+	background-image: url("../assets/fondo_comunidad.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }

@@ -6,8 +6,8 @@
 }
 
 .seccion__titulo--comunidad{
-	padding: 5px 0px;
 	width: 100%;
+	height: 90vh;
 }
 
 .icono {
@@ -113,9 +113,9 @@
 	}
 }
 
-.comunidad-grid__hashomer { grid-area: hashomer;}
+.comunidad-grid__hashomer { grid-area: hashomer; }
 
-.comunidad-grid__jotam { grid-area: jotam;}
+.comunidad-grid__jotam { grid-area: jotam; }
 
 .comunidad-grid__meretz { grid-area: meretz; }
 
