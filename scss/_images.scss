@@ -77,5 +77,21 @@
 	background-image: url("../assets/fondo_comunidad.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
+}
+
+.actividades__fondo {
+	background-image: url("../assets/calendario.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width: 992px) {
+	.seccion__titulo--comunidad {
+		background-size: 100%;
+	}
+	.actividades__fondo {
+		background-size: 100%;
+	}
 }

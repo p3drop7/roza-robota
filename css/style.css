@@ -364,7 +364,19 @@ footer {
   background-image: url("../assets/fondo_comunidad.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
+
+.actividades__fondo {
+  background-image: url("../assets/calendario.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media (min-width: 992px) {
+  .seccion__titulo--comunidad {
+    background-size: 100%; }
+  .actividades__fondo {
+    background-size: 100%; } }
 
 /* TITULO DEL NAV */
 .h1__animation {
@@ -909,10 +921,15 @@ footer {
   margin-bottom: 40px;
   width: 100%; }
 
+.actividades__fondo {
+  height: 90vh;
+  width: 100%; }
+
 .actividad {
   width: 90vw;
   height: auto;
   margin: 30px 0px;
+  padding: 50px 0px;
   overflow: hidden;
   text-align: center; }
   .actividad h3 {

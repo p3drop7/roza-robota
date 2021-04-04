@@ -13,10 +13,16 @@
 	width: 100%;
 }
 
+.actividades__fondo {
+	height: 90vh;
+	width: 100%;
+}
+
 .actividad {
 	width: 90vw;
 	height: auto;
 	margin: 30px 0px;
+	padding: 50px 0px;
 	overflow: hidden;
 	text-align: center;
 	h3 {
