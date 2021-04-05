@@ -113,6 +113,7 @@
 	margin-top: 20px;
 	height: 60px;
 	width: 40vw;
+	color: white;
 }
 
 input {
@@ -178,48 +179,68 @@ textarea {
 
 .datosContacto {
 	width: 100%;
-	height: auto;
+	margin: 40px 0px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
+	align-items: center;
 }
 
 .datosContacto__RRSS {
+	height: auto;
+	width: 90%;
+	padding-bottom: 15px;
+	margin: 20px 0px;
 	display: inherit;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	div a {
-		flex-direction: row;
-		p {
-			display: inline-block;
-		}
-	}
+	text-align: center;
 	h3 {
 		padding: 30px 0px;
 	}
+	div {
+		margin: 13px 0px;
+	}
+	border-radius: 10px;
+	box-shadow: 5px 5px 25px gray;
 }
 
 .datosContacto__otros {
+	height: auto;
+	width: 90%;
+	padding-bottom: 15px;
 	display: inherit;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	div {
-		flex-direction: row;
-		justify-content: center;
-		p {
-		display: inline-block;
-		}
-	}
+	text-align: center;
 	h3 {
 		padding: 30px 0px;
 	}
+	div {
+		margin: 10px 0px;
+	}
+	border-radius: 10px;
+	box-shadow: 5px 5px 25px gray;
 }
 
 @media (min-width: 992px) {
 	.datosContacto {
 		flex-direction: row;
 		height: 60vh;
+		justify-content: space-evenly;
 	}	
+	.datosContacto__RRSS {
+		width: 35%;
+	}
+	.datosContacto__otros {
+		width: 35%;
+	}
+}
+
+.datosContacto .fab {
+	font-size: 2.5em !important;
+	color: black;
+}
+
+.datosContacto .fas {
+	font-size: 2.5em;
+	color: black;
 }
