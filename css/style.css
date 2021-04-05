@@ -1133,6 +1133,34 @@ textarea {
     width: auto;
     border-radius: 10px; } }
 
+.datosContacto {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.datosContacto__RRSS {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .datosContacto__RRSS div a {
+    flex-direction: row; }
+    .datosContacto__RRSS div a p {
+      display: inline-block; }
+
+.datosContacto__otros {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .datosContacto__otros div {
+    flex-direction: row;
+    justify-content: center; }
+    .datosContacto__otros div p {
+      display: inline-block; }
+
 /* rgb (35, 194, 160) */
 /* #1ca4ed */
 /* #1991d1 */
