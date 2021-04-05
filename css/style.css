@@ -857,6 +857,7 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 30px;
+  border: 1px solid gray;
   box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
   .comunidad-grid__hashomer div, .comunidad-grid__jotam div, .comunidad-grid__meretz div, .comunidad-grid__huerta div {
     height: 230px;
@@ -1144,7 +1145,8 @@ textarea {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px 20px;
     width: auto;
-    border-radius: 10px; } }
+    border-radius: 10px;
+    border: 1px solid gray; } }
 
 .datosContacto {
   width: 100%;
@@ -1189,9 +1191,11 @@ textarea {
     height: 60vh;
     justify-content: space-evenly; }
   .datosContacto__RRSS {
-    width: 35%; }
+    width: 35%;
+    border: 1px solid gray; }
   .datosContacto__otros {
-    width: 35%; } }
+    width: 35%;
+    border: 1px solid gray; } }
 
 .datosContacto .fab {
   font-size: 2.5em !important;
