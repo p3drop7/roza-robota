@@ -21,7 +21,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 }
 
 .formContacto {
@@ -50,20 +50,32 @@
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 15px;
+	input {
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.7)
+	}
 }
 
 .formApellido {
 	grid-area: formApellido;
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
+	input {
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.7)
+	}
 }
 
 .formEmail {
 	grid-area: formEmail;
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
+	input {
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.7)
+	}
 }
 
 .formTelefono {
@@ -71,6 +83,10 @@
 	width: 100%;
 	padding-top: 10px;
 	padding-bottom: 15px;
+	input {
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 0.7)
+	}
 }
 
 .formMotivo {
@@ -79,7 +95,6 @@
 	padding-top: 10px;
 	padding-bottom: 15px;
 	text-align: center;
-
 }
 
 .formMotivo label select {
@@ -90,7 +105,7 @@
 	grid-area: formTextArea;
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
 }
 
 .formNews {
@@ -111,9 +126,10 @@
 .boton__boton {
 	border-radius: 10px;
 	margin-top: 20px;
-	height: 60px;
+	height: 50px;
 	width: 40vw;
 	color: white;
+	font-size: 1em;
 }
 
 input {
@@ -148,6 +164,15 @@ select {
 textarea {
 	@extend input;
 	height: 150px;
+	background-color: rgba(255, 255, 255, 0.9)
+}
+
+textarea:focus {
+	background-color: white;
+}
+
+input:focus {
+	background-color: white;
 }
 
 @media (min-width: 992px) {
@@ -163,18 +188,24 @@ textarea {
 			"formTextArea formTextArea"
 			"formNews formNews"
 			"boton boton";
-		grid-row-gap: 10px;
-		grid-column-gap: 30px;
+		grid-row-gap: 2px;
+		grid-column-gap: 20px;
 		justify-content: center;
 		align-items: center;
 		justify-items: center;
 	}
 	.formularioDeContacto form {
-		background-color: rgba(255, 255, 255, 0.8);
+		background-color: rgba(255, 255, 255, 0.7);
 		padding: 20px 20px;
 		width: auto;
 		border-radius: 10px;
 		border: 1px solid gray;
+	}
+	.formNombre input, 
+	.formApellido input, 
+	.formEmail input, 
+	.formTelefono input {
+		background-color: white;
 	}
 }
 

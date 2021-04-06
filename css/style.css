@@ -942,7 +942,7 @@ footer {
   width: 90vw;
   height: auto;
   margin: 30px 0px;
-  padding: 50px 0px;
+  padding: 50px 20px;
   overflow: hidden;
   text-align: center; }
   .actividad h3 {
@@ -1030,7 +1030,7 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 40px; }
+  padding-bottom: 60px; }
 
 .formContacto {
   width: 90%;
@@ -1049,24 +1049,36 @@ hr {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 15px; }
+  .formNombre input, .formNombre select, .formNombre textarea {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); }
 
 .formApellido {
   grid-area: formApellido;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 15px; }
+  padding-bottom: 10px; }
+  .formApellido input, .formApellido select, .formApellido textarea {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); }
 
 .formEmail {
   grid-area: formEmail;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 15px; }
+  padding-bottom: 10px; }
+  .formEmail input, .formEmail select, .formEmail textarea {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); }
 
 .formTelefono {
   grid-area: formTelefono;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 15px; }
+  .formTelefono input, .formTelefono select, .formTelefono textarea {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); }
 
 .formMotivo {
   grid-area: formMotivo;
@@ -1082,7 +1094,7 @@ hr {
   grid-area: formTextArea;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 15px; }
+  padding-bottom: 5px; }
 
 .formNews {
   grid-area: formNews; }
@@ -1099,9 +1111,10 @@ hr {
 .boton__boton {
   border-radius: 10px;
   margin-top: 20px;
-  height: 60px;
+  height: 50px;
   width: 40vw;
-  color: white; }
+  color: white;
+  font-size: 1em; }
 
 input, select, textarea {
   height: 40px;
@@ -1127,7 +1140,14 @@ select {
   height: 37px; }
 
 textarea {
-  height: 150px; }
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+textarea:focus {
+  background-color: white; }
+
+input:focus, select:focus, textarea:focus {
+  background-color: white; }
 
 @media (min-width: 992px) {
   .formContacto {
@@ -1136,17 +1156,19 @@ textarea {
     grid-template-rows: auto auto auto auto auto auto;
     grid-auto-columns: auto auto;
     grid-template-areas: "formNombre formApellido" "formEmail formTelefono" "formMotivo formMotivo" "formTextArea formTextArea" "formNews formNews" "boton boton";
-    grid-row-gap: 10px;
-    grid-column-gap: 30px;
+    grid-row-gap: 2px;
+    grid-column-gap: 20px;
     justify-content: center;
     align-items: center;
     justify-items: center; }
   .formularioDeContacto form {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px 20px;
     width: auto;
     border-radius: 10px;
-    border: 1px solid gray; } }
+    border: 1px solid gray; }
+  .formNombre input, .formNombre select, .formNombre textarea, .formApellido input, .formApellido select, .formApellido textarea, .formEmail input, .formEmail select, .formEmail textarea, .formTelefono input, .formTelefono select, .formTelefono textarea {
+    background-color: white; } }
 
 .datosContacto {
   width: 100%;
