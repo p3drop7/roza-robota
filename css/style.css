@@ -1302,20 +1302,26 @@ footer {
   margin-top: 10px; }
 
 .formularioDonar {
-  padding-bottom: 20px;
+  width: auto;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center; }
 
 .formDonar {
-  width: 90vw;
+  width: 300px;
+  padding-top: 20px;
+  padding-right: 10px;
   display: grid;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "donarNombre donarApellido" "donarEmail donarEmail" "donarAnonimo donarAnonimo" "donarTextArea donarTextArea" "donarBotones donarBotones";
   justify-items: center;
   align-items: center;
-  grid-row-gap: 10px;
-  grid-column-gap: 20px; }
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray; }
 
 .donarNombre {
   grid-area: donarNombre; }
@@ -1325,7 +1331,7 @@ footer {
 
 .donarEmail {
   grid-area: donarEmail;
-  width: 100%; }
+  width: 90%; }
 
 .donarAnonimo {
   grid-area: donarAnonimo; }
@@ -1336,11 +1342,6 @@ footer {
 .donarBotones {
   grid-area: donarBotones; }
 
-.botonEnviar {
-  height: 30px;
-  font-size: 0.8em;
-  background-color: #47edc9; }
-
 .input-donar {
   border-width: 0px 0px 2px 0px;
   border-radius: 0px; }
@@ -1349,17 +1350,21 @@ footer {
   height: 20px; }
 
 .textarea-donar {
-  width: 295px; }
+  width: 100%; }
 
-.boton-donar {
-  border-radius: 10px;
-  margin-bottom: 50px;
-  height: 40px;
-  width: 300px; }
+.donarBotones {
+  width: 30%; }
+  .donarBotones .boton-donar {
+    height: 35px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    background-color: #23c29f; }
 
 @media (min-width: 992px) {
   .formDonar {
-    width: auto; } }
+    width: 25%; } }
 
 * {
   margin: 0px;
