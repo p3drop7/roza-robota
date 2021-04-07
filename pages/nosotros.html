@@ -84,10 +84,74 @@
 
 		<div class="nosotros__contenido">	
 			
-			<div class="grid-nosotros__1">
+			<div class="grid-nosotros__1" data-aos="fade-down">
 				<p class="parrafo parrafo--nosotros">La Casa de Cultura Roza Robota nace como una iniciativa de quienes habiendo pasado por Hashomer Hatzair buscan seguir activando. La propuesta es crear un puente entre las juventudes, dar lugar a nuevas experiencias socio-comunitarias, brindar espacios de reflexión relevantes a nuestro tiempo y contribuir a la creación de la cultura judía en Buenos Aires. Invitamos a todas y todos a sumarse a nuestras actividades y proyectos. ¡Traé tu idea! </p>
 			</div>
+		</div>	
+
+		<!----------- Slideshow --------------------->
+		<div class="slideshow">	
+			<div class="slideshow-container">
+
+  				<!-- Imagenes del Slideshow -->
+  				<div class="mySlides fade">
+    				<div class="numbertext">1 / 7</div>
+    				<img src="../assets/file_17.jpeg" style="width:100%">
+  				</div>
+
+  				<div class="mySlides fade">
+    				<div class="numbertext">2 / 7</div>
+    				<img src="../assets/file_16.jpeg" style="width:100%">
+  				</div>
+	
+  				<div class="mySlides fade">
+   					<div class="numbertext">3 / 7</div>
+    				<img src="../assets/file_8.jpeg" style="width:100%">
+ 				</div>
+
+ 				<div class="mySlides fade">
+   					<div class="numbertext">4 / 7</div>
+    				<img src="../assets/file_10.jpeg" style="width:100%">
+ 				</div>
+
+ 				<div class="mySlides fade">
+   					<div class="numbertext">5 / 7</div>
+    				<img src="../assets/file_15.jpeg" style="width:100%">
+ 				</div>
+
+ 				<div class="mySlides fade">
+   					<div class="numbertext">6 / 7</div>
+    				<img src="../assets/file_01.jpeg" style="width:100%">
+ 				</div>
+
+ 				<div class="mySlides fade">
+   					<div class="numbertext">7 / 7</div>
+    				<img src="../assets/file_08.jpeg" style="width:100%">
+ 				</div>
+
+  				<!-- Botones -->
+  				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			
+			</div>
+			<br>
+	
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+  				<span class="dot" onclick="currentSlide(1)"></span>
+  				<span class="dot" onclick="currentSlide(2)"></span>
+  				<span class="dot" onclick="currentSlide(3)"></span>
+  				<span class="dot" onclick="currentSlide(4)"></span>
+  				<span class="dot" onclick="currentSlide(5)"></span>
+  				<span class="dot" onclick="currentSlide(6)"></span>
+  				<span class="dot" onclick="currentSlide(7)"></span>
+			</div>
+
+		</div>
+		<!-------------- Fin del slideshow ----------------->
+			
+		<div class="nosotros__contenido">	
+
 			<div class="grid-nosotros__2">
 				<div class="grid-nosotros__foto grid-nosotros__foto--1"></div>
 				<div class="grid-nosotros__foto grid-nosotros__foto--2"></div>
@@ -163,6 +227,40 @@
         	</a>
         </div>
     </div>
+
+	<!-- JS del SLIDESHOW -->
+	<script type="text/javascript">
+		
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+	<!-- Fin de JS del SLIDESHOW -->
 
 	<!-- JS del menu collapsible -->
 	<script type="text/javascript">
