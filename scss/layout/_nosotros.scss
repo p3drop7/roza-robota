@@ -242,3 +242,11 @@
 .galeria__7 { grid-area: foto7; }
 .galeria__8 { grid-area: foto8; }
 .galeria__9 { grid-area: foto9; }
+
+.galeria div {
+	transition: 0.5s!important;
+}
+
+.galeria div:hover {
+	transform: scale(1.1, 1.1)!important;
+}
