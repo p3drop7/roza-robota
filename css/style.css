@@ -679,7 +679,7 @@ footer {
 
 .footer__grid {
   width: 90%;
-  padding-top: 30px;
+  padding: 30px 20px;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 90%;
@@ -711,7 +711,6 @@ footer {
 
 .footer__area--redes {
   justify-self: center;
-  padding: 20px 0px;
   font-size: 0.8em; }
 
 .footer__area--newsletter {
@@ -739,11 +738,6 @@ footer {
   height: auto;
   padding: 10px 0px; }
 
-.fab {
-  font-size: 2.2em;
-  color: white;
-  margin: 0px 10px; }
-
 @media (min-width: 994px) {
   .footer__grid {
     grid-template-rows: auto;
@@ -758,6 +752,18 @@ footer {
       display: inherit;
       flex-flow: inherit;
       align-items: inherit; } }
+
+.fa-map-marker-alt {
+  font-size: 1em;
+  color: white; }
+
+.fab {
+  font-size: 1.3em;
+  color: white; }
+
+.fa-envelope--footer {
+  font-size: 1.2em !important;
+  color: white; }
 
 .copyright div i {
   font-size: 1.5em;
