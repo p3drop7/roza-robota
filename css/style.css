@@ -1162,6 +1162,7 @@ footer {
 .main-actividades {
   height: auto;
   width: 100vw;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1174,7 +1175,8 @@ footer {
 
 .actividades__fondo {
   height: 90vh;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 50px; }
 
 .actividad {
   width: 90vw;
@@ -1247,6 +1249,9 @@ footer {
 
 hr {
   width: 90%; }
+
+.main-actividades section:hover h3 {
+  color: white; }
 
 .contacto {
   width: 100vw;
