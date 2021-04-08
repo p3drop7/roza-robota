@@ -911,7 +911,7 @@ footer {
     overflow: hidden; } }
 
 /* SLIDESHOW */
-.slideshow {
+.slideshow--nosotros {
   background-color: green;
   width: 100%;
   height: auto;
@@ -996,7 +996,7 @@ footer {
     opacity: 1; } }
 
 @media (min-width: 992px) {
-  .slideshow {
+  .slideshow--nosotros {
     display: none; } }
 
 /* Fin del SLIDESHOW */
@@ -1116,7 +1116,7 @@ footer {
   width: 90vw;
   height: auto;
   margin: 30px 0px;
-  padding: 50px 20px;
+  padding: 50px 30px;
   overflow: hidden;
   text-align: center; }
   .actividad h3 {
