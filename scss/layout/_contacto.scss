@@ -6,7 +6,7 @@
 }
 
 .contacto___titulo {
-	padding: 20px 0px;
+	padding: 10px;
 	width: 100%;
 	text-align: center;
 }
@@ -228,9 +228,13 @@ input:focus {
 	text-align: center;
 	h3 {
 		padding: 30px 0px;
+		color: black;
 	}
 	div {
 		margin: 13px 0px;
+		p {
+			color: black;
+		}
 	}
 	border-radius: 10px;
 	box-shadow: 5px 5px 25px gray;
@@ -245,9 +249,13 @@ input:focus {
 	text-align: center;
 	h3 {
 		padding: 30px 0px;
+		color: black;
 	}
 	div {
 		margin: 10px 0px;
+		p {
+			color: black;
+		}
 	}
 	border-radius: 10px;
 	box-shadow: 5px 5px 25px gray;
@@ -257,24 +265,25 @@ input:focus {
 	.datosContacto {
 		flex-direction: row;
 		height: 60vh;
+		padding: 50px 0px;
 		justify-content: space-evenly;
 	}	
 	.datosContacto__RRSS {
 		width: 35%;
-		border: 1px solid gray;
+		height: 60vh;
 	}
 	.datosContacto__otros {
 		width: 35%;
-		border: 1px solid gray;
+		height: 60vh;
 	}
 }
 
 .datosContacto .fab {
 	font-size: 2.5em !important;
-	color: black;
+	color: white;
 }
 
 .datosContacto .fas {
 	font-size: 2.5em;
-	color: black;
+	color: white;
 }

@@ -1266,7 +1266,7 @@ hr {
   align-items: center; }
 
 .contacto___titulo {
-  padding: 20px 0px;
+  padding: 10px;
   width: 100%;
   text-align: center; }
 
@@ -1438,9 +1438,12 @@ input:focus, select:focus, textarea:focus {
   border-radius: 10px;
   box-shadow: 5px 5px 25px gray; }
   .datosContacto__RRSS h3 {
-    padding: 30px 0px; }
+    padding: 30px 0px;
+    color: black; }
   .datosContacto__RRSS div {
     margin: 13px 0px; }
+    .datosContacto__RRSS div p {
+      color: black; }
 
 .datosContacto__otros {
   height: auto;
@@ -1452,29 +1455,33 @@ input:focus, select:focus, textarea:focus {
   border-radius: 10px;
   box-shadow: 5px 5px 25px gray; }
   .datosContacto__otros h3 {
-    padding: 30px 0px; }
+    padding: 30px 0px;
+    color: black; }
   .datosContacto__otros div {
     margin: 10px 0px; }
+    .datosContacto__otros div p {
+      color: black; }
 
 @media (min-width: 992px) {
   .datosContacto {
     flex-direction: row;
     height: 60vh;
+    padding: 50px 0px;
     justify-content: space-evenly; }
   .datosContacto__RRSS {
     width: 35%;
-    border: 1px solid gray; }
+    height: 60vh; }
   .datosContacto__otros {
     width: 35%;
-    border: 1px solid gray; } }
+    height: 60vh; } }
 
 .datosContacto .fab {
   font-size: 2.5em !important;
-  color: black; }
+  color: white; }
 
 .datosContacto .fas {
   font-size: 2.5em;
-  color: black; }
+  color: white; }
 
 /* rgb (35, 194, 160) */
 /* #1ca4ed */
